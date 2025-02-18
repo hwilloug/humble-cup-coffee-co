@@ -7,14 +7,13 @@ export function ShopFeatures() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-16 sm:py-24 bg-background">
+    <section className="py-16 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div 
             className="text-center mb-12 sm:mb-16"
             style={{
-              transform: `translateY(${Math.max(0, (scrollY - 500) * 0.1)}px)`,
-              opacity: Math.min(1, Math.max(0, (scrollY - 400) / 500))
+              transform: `translateY(${Math.max(0, (scrollY - 100) * 0.1)}px)`,
             }}
           >
             <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">Experience Our Space</h2>
@@ -43,21 +42,20 @@ export function ShopFeatures() {
             ].map((feature, index) => (
               <div 
                 key={index}
-                className="relative group"
+                className="relative group shadow-lg rounded-lg bg-stone-50"
                 style={{
-                  transform: `translateY(${Math.max(0, (scrollY - 600) * 0.1)}px)`,
-                  opacity: Math.min(1, Math.max(0, (scrollY - 500) / 500))
+                  transform: `translateY(${Math.max(0, (scrollY - 100) * 0.1)}px)`,
                 }}
               >
-                <div className="relative h-[300px] sm:h-[400px] overflow-hidden">
+                <div className="relative h-[300px] sm:h-[400px]">
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 rounded-t-lg"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
                 </div>
-                <div className="p-6 sm:p-8 bg-stone-50">
+                <div className="p-6 sm:p-8">
                   <div className="flex items-center gap-3 mb-3 sm:mb-4">
                     <feature.icon className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                     <h3 className="text-lg sm:text-xl font-light">{feature.title}</h3>

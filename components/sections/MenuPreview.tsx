@@ -6,7 +6,7 @@ export function MenuPreview() {
   const scrollY = useParallax();
 
   return (
-    <section className="relative py-16 sm:py-24 bg-background overflow-hidden">
+    <section className="relative py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <h2 
           className="text-3xl sm:text-4xl font-light text-center mb-12 sm:mb-20 tracking-wide"
@@ -15,7 +15,7 @@ export function MenuPreview() {
             opacity: Math.min(1, Math.max(0, (scrollY - 2300) / 500))
           }}
         >
-          Our Signature Collection
+          Seasonal Menu
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
           {[
@@ -37,13 +37,12 @@ export function MenuPreview() {
           ].map((drink, index) => (
             <div 
               key={index} 
-              className="group bg-stone-50 overflow-hidden transform transition-all duration-500 hover:shadow-xl"
+              className="group bg-stone-50 transform transition-all duration-500 hover:shadow-xl"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 2400 - index * 100) * 0.1)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 2300 - index * 100) / 500))
+                transform: `translateY(${Math.max(0, (scrollY - 2400) * 0.1)}px)`,
               }}
             >
-              <div className="relative overflow-hidden">
+              <div className="relative">
                 <img
                   src={drink.image}
                   alt={drink.name}

@@ -13,21 +13,19 @@ export function OurStory() {
             <div 
               className="relative"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.1)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 800) / 500))
+                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.1)}px)`
               }}
             >
               <img
                 src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
                 alt="Coffee artisan at work"
-                className="w-full h-[400px] sm:h-[600px] object-cover"
+                className="w-full h-[400px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>
             <div 
               className="space-y-4 sm:space-y-6"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.15)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 800) / 500))
+                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.15)}px)`
               }}
             >
               <h2 className="text-3xl sm:text-4xl font-light tracking-wide">Our Story</h2>

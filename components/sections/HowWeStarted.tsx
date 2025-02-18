@@ -43,7 +43,13 @@ export function HowWeStarted() {
                 description: "Expanded to multiple locations while maintaining our artisanal quality"
               }
             ].map((milestone, index) => (
-              <div key={index} className="text-center p-6 sm:p-8 bg-stone-50">
+              <div 
+                key={index} 
+                className="text-center p-6 sm:p-8 bg-stone-50"
+                style={{
+                  transform: `translateY(${Math.max(0, ((scrollY - 3000)*index - index * 200) * 0.1)}px)`
+                }}
+              >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">{milestone.year}</div>
                 <h3 className="text-lg sm:text-xl mb-3 sm:mb-4">{milestone.title}</h3>
                 <p className="text-gray-600 text-sm sm:text-base">{milestone.description}</p>

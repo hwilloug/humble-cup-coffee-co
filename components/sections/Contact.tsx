@@ -6,27 +6,8 @@ import { useState } from 'react';
 
 export function Contact() {
   const scrollY = useParallax();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
   return (
-    <section className="relative py-16 sm:py-24 bg-background overflow-hidden">
+    <section className="relative py-16 sm:py-24">
       <div 
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -53,62 +34,6 @@ export function Contact() {
               We'd love to hear from you. Whether you have a question about our services, need help, or just want to share your coffee experience, we're here to listen.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
-            {/* Contact Form */}
-            <div 
-              className="bg-stone-50 p-6 sm:p-8 shadow-sm"
-              style={{
-                transform: `translateY(${Math.max(0, (scrollY - 3000) * 0.15)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 2900) / 500))
-              }}
-            >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-primary text-white px-6 py-3 flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors"
-                >
-                  <Send className="w-4 h-4" />
-                  <span>Send Message</span>
-                </button>
-              </form>
-            </div>
 
             {/* Contact Information */}
             <div 
@@ -154,7 +79,6 @@ export function Contact() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
