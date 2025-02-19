@@ -10,22 +10,36 @@ import { Features } from '@/components/sections/Features';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { MenuPreview } from '@/components/sections/MenuPreview';
 import { InTheNews } from '@/components/sections/InTheNews';
-import { Contact } from '@/components/sections/Contact';
+import Coffee from '@/components/sections/Coffee';
+import Image from 'next/image';
+import ImageGallery from '@/components/sections/ImageGallery';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <TopInfoBar />
       <Hero />
       <Features />
+      <Divider />
+      <Coffee />
+      <Divider />
       <ShopFeatures />
+      <Divider />
+      <MenuPreview />
+      <Divider />
       <OurStory />
       <OurBrand />
+      <Divider />
       <HowWeStarted />
+      <Divider />
       <Testimonials />
-      <MenuPreview />
+      <Divider />
       <InTheNews />
-      <Contact />
+      <Divider />
+      <ImageGallery />
     </main>
   );
+}
+
+const Divider = () => {
+  return <Image src="https://humble-cup-images.s3.us-east-1.amazonaws.com/green_text_divider.png" alt="Shop Features" width={200} height={200} className="mx-auto" />
 }

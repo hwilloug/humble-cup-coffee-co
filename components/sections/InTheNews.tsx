@@ -6,25 +6,17 @@ export function InTheNews() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-24 sm:py-32">
+    <section className="my-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div 
             className="text-center mb-12 sm:mb-16"
-            style={{
-              transform: `translateY(${Math.max(0, (scrollY - 2700) * 0.1)}px)`,
-              opacity: Math.min(1, Math.max(0, (scrollY - 2600) / 500))
-            }}
           >
             <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">In The News</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">Read what the press has to say about our commitment to quality and community.</p>
           </div>
           <div 
             className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"
-            style={{
-              transform: `translateY(${Math.max(0, (scrollY - 2700) * 0.1)}px)`,
-              opacity: Math.min(1, Math.max(0, (scrollY - 2600) / 500))
-            }}
           >
             {[
               {

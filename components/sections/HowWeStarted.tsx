@@ -11,20 +11,12 @@ export function HowWeStarted() {
         <div className="max-w-6xl mx-auto">
           <div 
             className="text-center mb-12 sm:mb-16"
-            style={{
-              transform: `translateY(${Math.max(0, (scrollY - 1500) * 0.1)}px)`,
-              opacity: Math.min(1, Math.max(0, (scrollY - 1400) / 500))
-            }}
           >
             <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">How We Started</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">Our journey from a small garage to a beloved coffee destination has been fueled by passion, perseverance, and the support of our amazing community.</p>
           </div>
           <div 
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8"
-            style={{
-              transform: `translateY(${Math.max(0, (scrollY - 1500) * 0.1)}px)`,
-              opacity: Math.min(1, Math.max(0, (scrollY - 1400) / 500))
-            }}
           >
             {[
               {
@@ -47,7 +39,7 @@ export function HowWeStarted() {
                 key={index} 
                 className="text-center p-6 sm:p-8 bg-stone-50"
                 style={{
-                  transform: `translateY(${Math.max(0, ((scrollY - 3000)*index - index * 200) * 0.1)}px)`
+                  transform: `translateY(${(scrollY - 4500) * (0.05 * (index - 1))}px)`,
                 }}
               >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">{milestone.year}</div>

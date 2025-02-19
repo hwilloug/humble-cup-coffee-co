@@ -1,19 +1,17 @@
 'use client';
 
 import { useParallax } from '@/hooks/useParallax';
+import Link from 'next/link';
+import { Button } from '../ui/button';
 
 export function MenuPreview() {
   const scrollY = useParallax();
 
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="my-12">
       <div className="container mx-auto px-4">
         <h2 
-          className="text-3xl sm:text-4xl font-light text-center mb-12 sm:mb-20 tracking-wide"
-          style={{
-            transform: `translateY(${Math.max(0, (scrollY - 2400) * 0.1)}px)`,
-            opacity: Math.min(1, Math.max(0, (scrollY - 2300) / 500))
-          }}
+          className="text-3xl sm:text-4xl font-light text-center mb-12 tracking-wide"
         >
           Seasonal Menu
         </h2>
@@ -37,16 +35,13 @@ export function MenuPreview() {
           ].map((drink, index) => (
             <div 
               key={index} 
-              className="group bg-stone-50 transform transition-all duration-500 hover:shadow-xl"
-              style={{
-                transform: `translateY(${Math.max(0, (scrollY - 2400) * 0.1)}px)`,
-              }}
+              className="group bg-stone-50 transform transition-all duration-500 shadow-lg rounded-lg hover:scale-105 hover:shadow-2xl"
             >
               <div className="relative">
                 <img
                   src={drink.image}
                   alt={drink.name}
-                  className="w-full h-64 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-64 sm:h-80 object-cover rounded-t-lg"
                 />
               </div>
               <div className="p-6 sm:p-8 text-center">
@@ -55,6 +50,11 @@ export function MenuPreview() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 flex justify-center">
+          <Link href="/menu">
+            <Button>View Full Menu</Button>
+          </Link>
         </div>
       </div>
     </section>

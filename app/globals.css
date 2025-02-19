@@ -80,3 +80,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-brick {
+  background: url('https://humble-cup-images.s3.us-east-1.amazonaws.com/brick.png') center center;
+  background-size: contain;
+}

@@ -1,6 +1,10 @@
+import { TopInfoBar } from '@/components/sections/TopInfoBar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Contact } from '@/components/sections/Contact';
+import Image from 'next/image';
+import Footer from '@/components/sections/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <TopInfoBar />
+        {children}
+        <Contact />
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,19 +1,20 @@
 'use client';
 
 import { useParallax } from '@/hooks/useParallax';
+import Link from 'next/link';
+import { Button } from '../ui/button';
 
 export function OurStory() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-16 sm:py-24 bg-background">
+    <section className="py-8 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div 
-              className="relative"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.1)}px)`
+                transform: `translateY(${Math.max(0, (scrollY - 3000) * 0.1)}px)`
               }}
             >
               <img
@@ -24,9 +25,6 @@ export function OurStory() {
             </div>
             <div 
               className="space-y-4 sm:space-y-6"
-              style={{
-                transform: `translateY(${Math.max(0, (scrollY - 900) * 0.15)}px)`
-              }}
             >
               <h2 className="text-3xl sm:text-4xl font-light tracking-wide">Our Story</h2>
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
@@ -35,6 +33,11 @@ export function OurStory() {
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 Our journey started in a small garage with a single roaster and an endless passion for the perfect cup. Today, we've grown into a beloved destination for coffee enthusiasts, but our core values remain unchanged.
               </p>
+              <div className="mt-4">
+                <Link href="/our-story" className="text-primary">
+                  <Button>Read More</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

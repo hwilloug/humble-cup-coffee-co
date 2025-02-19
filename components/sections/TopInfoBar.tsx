@@ -1,28 +1,24 @@
 'use client';
 
 import { MapPin, Phone, Clock } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export function TopInfoBar() {
+  const pathname = usePathname();
+
   return (
-    <div className="bg-primary text-primary-foreground py-2">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
-              <span className="text-sm">123 Coffee Street, Downtown</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm">(555) 123-4567</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4" />
-            <span className="text-sm">Mon-Sun: 7am - 8pm</span>
+    <div className="mb-4">
+      <div className="w-full px-4 py-2 bg-primary text-white">
+          <div className="flex items-center justify-end gap-4 sm:gap-8">
+            <Link href="/our-story">Our Story</Link>
+            <Link href="/menu">Menu</Link>
           </div>
         </div>
-      </div>
+        <div className="absolute top-0 left-4 flex items-center justify-center">
+          <Image src="https://humble-cup-images.s3.us-east-1.amazonaws.com/pothos_hanging.png" alt="Humble Cup Logo Background" width={200} height={200} />
+        </div>
     </div>
   );
 }

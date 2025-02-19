@@ -7,14 +7,11 @@ export function ShopFeatures() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-8 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div 
             className="text-center mb-12 sm:mb-16"
-            style={{
-              transform: `translateY(${Math.max(0, (scrollY - 100) * 0.1)}px)`,
-            }}
           >
             <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">Experience Our Space</h2>
             <p className="text-gray-600 max-w-3xl mx-auto px-4">Discover the perfect environment for every moment, whether you're working, relaxing, or spending time with family.</p>
@@ -43,9 +40,6 @@ export function ShopFeatures() {
               <div 
                 key={index}
                 className="relative group shadow-lg rounded-lg bg-stone-50"
-                style={{
-                  transform: `translateY(${Math.max(0, (scrollY - 100) * 0.1)}px)`,
-                }}
               >
                 <div className="relative h-[300px] sm:h-[400px]">
                   <img

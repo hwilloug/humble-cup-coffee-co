@@ -12,10 +12,6 @@ export function OurBrand() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div 
               className="space-y-4 sm:space-y-6 order-2 md:order-1"
-              style={{
-                transform: `translateY(${Math.max(0, (scrollY - 1200) * 0.15)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 1100) / 500))
-              }}
             >
               <h2 className="text-3xl sm:text-4xl font-light tracking-wide">Our Brand</h2>
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
@@ -28,14 +24,13 @@ export function OurBrand() {
             <div 
               className="relative order-1 md:order-2"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 1200) * 0.1)}px)`,
-                opacity: Math.min(1, Math.max(0, (scrollY - 1100) / 500))
+                transform: `translateY(${Math.max(0, (scrollY - 4000) * 0.1)}px)`,
               }}
             >
               <img
                 src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
                 alt="Coffee beans and brand elements"
-                className="w-full h-[400px] sm:h-[600px] object-cover"
+                className="w-full h-[400px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>
           </div>
