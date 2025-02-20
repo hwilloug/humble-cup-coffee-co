@@ -6,11 +6,11 @@ export function InTheNews() {
   const scrollY = useParallax();
 
   return (
-    <section className="my-12">
+    <section className="my-12 py-12 bg-primary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               In The News
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">

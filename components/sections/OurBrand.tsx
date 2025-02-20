@@ -1,6 +1,7 @@
 "use client";
 
 import { useParallax } from "@/hooks/useParallax";
+import Divider from "../ui/divider";
 
 export function OurBrand() {
   const scrollY = useParallax();
@@ -11,9 +12,10 @@ export function OurBrand() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div className="space-y-4 sm:space-y-6 order-2 md:order-1">
-              <h2 className="text-3xl sm:text-4xl font-light tracking-wide">
+              <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide text-center">
                 Our Brand
               </h2>
+              <Divider />
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 The Artisan Coffee Co. brand represents more than just premium
                 coffee—it embodies our commitment to craftsmanship,
@@ -30,7 +32,7 @@ export function OurBrand() {
             <div
               className="relative order-1 md:order-2"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 4000) * 0.1)}px)`,
+                transform: `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
               }}
             >
               <img

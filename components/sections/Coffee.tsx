@@ -1,5 +1,6 @@
 import { useParallax } from "@/hooks/useParallax";
 import Image from "next/image";
+import Divider from "../ui/divider";
 
 export default function Coffee() {
   const scrollY = useParallax();
@@ -12,10 +13,11 @@ export default function Coffee() {
     <section>
       <div className="container mx-auto px-4 my-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl text-primary tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Our Coffee
           </h2>
-          <div className="flex gap-4 justify-between mt-12 bg-stone-50 p-4 rounded-lg">
+          <Divider />
+          <div className="flex gap-4 justify-between mt-12 bg-secondary p-4 rounded-lg">
             <Image
               src="https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee_bag_1.png"
               alt="Coffee"
@@ -57,9 +59,10 @@ export default function Coffee() {
       </div>
       <div className="container mx-auto px-4 my-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Our Pastries
           </h2>
+          <Divider />
           <div className="flex gap-4 justify-center mt-12">
             <Image
               src="https://humble-cup-images.s3.us-east-1.amazonaws.com/pastries.png"

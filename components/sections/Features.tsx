@@ -4,7 +4,7 @@ import { Coffee, Clock, MapPin } from "lucide-react";
 
 export function Features() {
   return (
-    <section>
+    <section className="py-4 my-8 bg-primary/10">
       <div className="container mx-auto px-4 my-16 relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-16">
           {[

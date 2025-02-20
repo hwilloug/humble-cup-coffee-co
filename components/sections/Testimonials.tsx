@@ -10,7 +10,7 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               What Our Customers Say
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">

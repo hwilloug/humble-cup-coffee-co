@@ -35,7 +35,7 @@ export default function ImageGallery() {
 
   return (
     <section className="my-12 mx-4">
-      <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+      <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
         Gallery
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto justify-center items-center">

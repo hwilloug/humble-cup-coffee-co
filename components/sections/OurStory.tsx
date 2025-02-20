@@ -3,6 +3,7 @@
 import { useParallax } from "@/hooks/useParallax";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import Divider from "../ui/divider";
 
 export function OurStory() {
   const scrollY = useParallax();
@@ -14,7 +15,7 @@ export function OurStory() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 3000) * 0.1)}px)`,
+                transform: `translateY(${Math.max(0, (scrollY - 4000) * 0.1)}px)`,
               }}
             >
               <img
@@ -24,9 +25,10 @@ export function OurStory() {
               />
             </div>
             <div className="space-y-4 sm:space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-light tracking-wide">
+              <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide text-center">
                 Our Story
               </h2>
+              <Divider />
               <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 Founded in 2015, Artisan Coffee Co. began with a simple yet
                 profound mission: to elevate the coffee experience through

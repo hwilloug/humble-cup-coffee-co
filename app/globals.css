@@ -26,7 +26,7 @@
     --popover-foreground: 0 0% 3.9%;
     --primary: 215 65% 41%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 218 21% 82%;
+    --secondary: 30, 53%, 30%;
     --secondary-foreground: 0 0% 9%;
     --muted: 218 21% 82%;
     --muted-foreground: 0 0% 45.1%;
@@ -85,4 +85,13 @@
   background: url("https://humble-cup-images.s3.us-east-1.amazonaws.com/brick.png")
     center center;
   background-size: contain;
+}
+
+h1,
+h2 {
+  font-family: var(--font-atkinson);
+}
+
+.font-atkinson {
+  font-family: var(--font-atkinson);
 }

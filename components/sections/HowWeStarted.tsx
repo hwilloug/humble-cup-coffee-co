@@ -1,18 +1,20 @@
 "use client";
 
 import { useParallax } from "@/hooks/useParallax";
+import Divider from "../ui/divider";
 
 export function HowWeStarted() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-16 sm:py-24 bg-background">
+    <section className="my-8 py-8 sm:py-16 bg-primary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               How We Started
             </h2>
+            <Divider />
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
               Our journey from a small garage to a beloved coffee destination
               has been fueled by passion, perseverance, and the support of our
@@ -42,7 +44,7 @@ export function HowWeStarted() {
                 key={index}
                 className="text-center p-6 sm:p-8 bg-stone-50"
                 style={{
-                  transform: `translateY(${(scrollY - 4500) * (0.05 * (index - 1))}px)`,
+                  transform: `translateY(${(scrollY - 5500) * (0.05 * (index - 1))}px)`,
                 }}
               >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">

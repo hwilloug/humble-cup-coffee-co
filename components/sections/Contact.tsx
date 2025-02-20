@@ -11,7 +11,7 @@ export function Contact() {
       <div className="container mx-auto px-4 bg-stone-50 shadow-xl">
         <div className="max-w-6xl mx-auto">
           <div className="text-center p-6 sm:p-8">
-            <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4">
+            <h2 className="text-3xl sm:text-4xl font-light text-primary tracking-wide mb-4">
               Get in Touch
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">

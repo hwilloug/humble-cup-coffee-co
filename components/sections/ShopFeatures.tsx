@@ -2,6 +2,7 @@
 
 import { useParallax } from "@/hooks/useParallax";
 import { BookOpen, Briefcase, Baby } from "lucide-react";
+import Divider from "../ui/divider";
 
 export function ShopFeatures() {
   const scrollY = useParallax();
@@ -11,9 +12,10 @@ export function ShopFeatures() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-light tracking-wide mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               Experience Our Space
             </h2>
+            <Divider />
             <p className="text-gray-600 max-w-3xl mx-auto px-4">
               Discover the perfect environment for every moment, whether you're
               working, relaxing, or spending time with family.

@@ -3,15 +3,16 @@
 import { useParallax } from "@/hooks/useParallax";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import Divider from "../ui/divider";
 
 export function MenuPreview({ link = true }: { link?: boolean }) {
   return (
-    <section className="my-12">
+    <section className={`my-8 py-8 ${link ? "bg-primary/10" : ""}`}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-light text-center mb-4 tracking-wide">
+        <h2 className="text-3xl sm:text-4xl text-primary font-light text-center mb-4 tracking-wide">
           Seasonal Menu
         </h2>
-        <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
+        <Divider />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
           {[
             {

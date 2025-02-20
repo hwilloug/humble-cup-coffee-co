@@ -10,7 +10,7 @@ export function TopInfoBar() {
 
   return (
     <div className="mb-4">
-      <div className="w-full px-4 py-2 bg-primary text-white flex justify-between items-center">
+      <div className="w-full px-4 py-2 bg-secondary text-white flex justify-between items-center">
         {pathname !== "/" ? (
           <Link href="/">
             <div className="flex items-center justify-center gap-1 sm:gap-2">
@@ -20,18 +20,20 @@ export function TopInfoBar() {
                 width={75}
                 height={75}
               />
-              <h1 className="text-2xl font-bold">Humble Cup Coffee</h1>
+              <h1 className="text-3xl">
+                Humble Cup Coffee
+              </h1>
             </div>
           </Link>
         ) : (
           <div />
         )}
-        <div className="flex items-center justify-end gap-4 sm:gap-8">
+        <div className="flex items-center justify-end gap-4 sm:gap-8 font-atkinson">
           <Link
             href="/menu"
             className={pathname === "/menu" ? "text-white/50" : "text-white"}
           >
-            Menu
+            MENU
           </Link>
           <Link
             href="/our-story"
@@ -39,13 +41,13 @@ export function TopInfoBar() {
               pathname === "/our-story" ? "text-white/50" : "text-white"
             }
           >
-            Our Story
+            OUR STORY
           </Link>
           <Link
             href="/staff"
             className={pathname === "/staff" ? "text-white/50" : "text-white"}
           >
-            Meet Our Baristas
+            MEET OUR BARISTAS
           </Link>
         </div>
       </div>
