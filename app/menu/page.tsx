@@ -1,3 +1,4 @@
+import { MenuPreview } from "@/components/sections/MenuPreview";
 import Image from "next/image";
 
 export default function Menu() {
@@ -108,16 +109,19 @@ export default function Menu() {
 
   return (
     <section>
-      <div className="container mx-auto px-4 max-w-xl md:max-w-2xl">
-        <div className="relative p-8">
+      <div className="container mx-auto">
+      <MenuPreview link={false} />
+
+        <div className="relative p-8 px-4 max-w-xl md:max-w-2xl mx-auto">
           <Image
             src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
             width={500}
             height={500}
             className="w-full"
+            alt="scalloped edge"
           />
           <div className="relative p-8 rounded-lg shadow-md bg-stone-50">
-            <h1 className="text-4xl font-light text-center my-4">Menu</h1>
+            <h1 className="text-4xl font-light text-center my-4">Everyday Menu</h1>
             <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
 
             <div className="space-y-16">
@@ -213,7 +217,7 @@ export default function Menu() {
                         <h2 className="text-2xl font-light my-2 text-center text-amber-900">
                           House Made Flavors
                         </h2>
-                        <div className="flex flex-wrap gap-2 my-4">
+                        <div className="flex flex-wrap gap-2 my-4 justify-center">
                           {houseMadeFlavors.map((flavor, flavorIdx) => (
                             <div
                               key={flavorIdx}
@@ -228,13 +232,25 @@ export default function Menu() {
                         <h2 className="text-2xl font-light my-2 text-center text-amber-900">
                           Flavors
                         </h2>
-                        <div className="flex flex-wrap gap-2 my-4">
+                        <div className="flex flex-wrap gap-2 my-4 justify-center">
                           {flavors.map((flavor, flavorIdx) => (
                             <div
                               key={flavorIdx}
                               className="bg-amber-600 text-white rounded-lg px-2 py-1"
                             >
                               <h3 className="text-md font-medium">{flavor}</h3>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <h2 className="text-2xl font-light my-2 text-center text-amber-900">
+                          Milk Options
+                        </h2>
+                        <div className="flex flex-wrap gap-2 my-4 justify-center">
+                          {milkOptions.map((milk, milkIdx) => (
+                            <div key={milkIdx} className="bg-blue-200 rounded-lg px-2 py-1">
+                              <h3 className="text-md font-medium">{milk}</h3>
                             </div>
                           ))}
                         </div>

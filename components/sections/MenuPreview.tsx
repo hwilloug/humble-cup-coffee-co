@@ -4,15 +4,14 @@ import { useParallax } from "@/hooks/useParallax";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-export function MenuPreview() {
-  const scrollY = useParallax();
-
+export function MenuPreview({ link = true }: { link?: boolean }) {
   return (
     <section className="my-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-light text-center mb-12 tracking-wide">
+        <h2 className="text-3xl sm:text-4xl font-light text-center mb-4 tracking-wide">
           Seasonal Menu
         </h2>
+        <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
           {[
             {
@@ -56,11 +55,11 @@ export function MenuPreview() {
             </div>
           ))}
         </div>
-        <div className="mt-12 flex justify-center">
+        {link && <div className="mt-12 flex justify-center">
           <Link href="/menu">
             <Button>View Full Menu</Button>
           </Link>
-        </div>
+        </div>}
       </div>
     </section>
   );
