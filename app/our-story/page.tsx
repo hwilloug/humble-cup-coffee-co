@@ -16,8 +16,8 @@ export default function OurStoryPage() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">The Beginning</h3>
                   <p className="text-gray-600">
-                    What started as a small team with big dreams has grown into a
-                    passionate community of innovators and problem solvers.
+                    What started as a small team with big dreams has grown into
+                    a passionate community of innovators and problem solvers.
                   </p>
                 </div>
               </div>
@@ -27,7 +27,9 @@ export default function OurStoryPage() {
                   <span className="text-blue-600 font-bold">2022</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Major Milestones</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Major Milestones
+                  </h3>
                   <p className="text-gray-600">
                     Through dedication and hard work, we've achieved significant
                     growth and expanded our reach to serve clients globally.
@@ -64,8 +66,8 @@ export default function OurStoryPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Innovation</h3>
               <p className="text-gray-600">
-                We constantly push boundaries and embrace new technologies to deliver
-                cutting-edge solutions.
+                We constantly push boundaries and embrace new technologies to
+                deliver cutting-edge solutions.
               </p>
             </div>
 
@@ -110,8 +112,8 @@ export default function OurStoryPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Trust</h3>
               <p className="text-gray-600">
-                We build lasting relationships through transparency, reliability,
-                and consistent delivery of quality.
+                We build lasting relationships through transparency,
+                reliability, and consistent delivery of quality.
               </p>
             </div>
           </div>
