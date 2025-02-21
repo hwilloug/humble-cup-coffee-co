@@ -10,7 +10,7 @@ export function TopInfoBar() {
 
   return (
     <div className="mb-4">
-      <div className="w-full px-4 py-2 bg-secondary text-white flex justify-between items-center">
+      <div className="w-full px-4 py-2 bg-primary text-white flex justify-between items-center">
         {pathname !== "/" ? (
           <Link href="/">
             <div className="flex items-center justify-center gap-1 sm:gap-2">
@@ -45,7 +45,7 @@ export function TopInfoBar() {
             href="/staff"
             className={pathname === "/staff" ? "text-white/50" : "text-white"}
           >
-            MEET OUR BARISTAS
+            MEET OUR STAFF
           </Link>
         </div>
       </div>

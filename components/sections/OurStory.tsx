@@ -15,7 +15,7 @@ export function OurStory() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 4000) * 0.1)}px)`,
+                transform: `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
               }}
             >
               <img

@@ -32,7 +32,7 @@ export function OurBrand() {
             <div
               className="relative order-1 md:order-2"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
+                transform: `translateY(${Math.max(0, (scrollY - 6000) * 0.1)}px)`,
               }}
             >
               <img

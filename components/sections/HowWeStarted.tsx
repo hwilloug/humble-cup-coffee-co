@@ -44,7 +44,7 @@ export function HowWeStarted() {
                 key={index}
                 className="text-center p-6 sm:p-8 bg-stone-50"
                 style={{
-                  transform: `translateY(${(scrollY - 5500) * (0.05 * (index - 1))}px)`,
+                  transform: `translateY(${(scrollY - 6000) * (0.05 * (index - 1))}px)`,
                 }}
               >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">

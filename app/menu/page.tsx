@@ -116,7 +116,7 @@ export default function Menu() {
 
         <div className="relative p-8 px-4 max-w-xl md:max-w-2xl mx-auto">
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped-edge-blue.png"
+            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
             width={500}
             height={500}
             className="w-full"
@@ -311,7 +311,7 @@ export default function Menu() {
             </div>
           </div>
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped-edge-blue.png"
+            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
             alt="Pothos Hanging"
             width={500}
             height={500}
