@@ -54,6 +54,20 @@ export function Features() {
             </div>
           ))}
         </div>
+        <div>
+          <h2 className="mt-12 text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+            Hours & Location
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-base text-center mb-4">
+            414 Tom Hall St, Fort Mill, SC 29715
+          </p>
+          <p className="text-gray-600 text-sm sm:text-base text-center mb-4">
+            Monday - Friday: 6am - 5pm
+          </p>
+          <p className="text-gray-600 text-sm sm:text-base text-center">
+            Saturday - Sunday: 7am - 5pm
+          </p>
+        </div>
       </div>
     </section>
   );

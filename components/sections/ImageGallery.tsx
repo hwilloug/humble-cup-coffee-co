@@ -40,13 +40,18 @@ export default function ImageGallery() {
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto justify-center items-center">
         {[
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
-          "https://humble-cup-images.s3.us-east-1.amazonaws.com/bookshelves.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_1.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_2.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_3.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_4.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_5.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_6.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_7.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_8.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_9.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_10.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_11.png",
+          "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_12.png",
         ].map((image, index) => (
           <div
             key={index}
@@ -56,7 +61,7 @@ export default function ImageGallery() {
             <Image
               ref={(el) => (imageRefs.current[index] = el as HTMLDivElement)}
               src={image}
-              alt="Humble Cup Logo Background"
+              alt="Humble Cup Pic"
               width={200}
               height={200}
             />
