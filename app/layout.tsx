@@ -1,21 +1,25 @@
 import { TopInfoBar } from "@/components/sections/TopInfoBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Lexend_Exa, Roboto } from "next/font/google";
+import { Klee_One, Lexend_Exa, Roboto } from "next/font/google";
 import { Contact } from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
 const inter = Roboto({ subsets: ["latin"], weight: "300" });
-const atkinson = Lexend_Exa({
+const headerFont = Lexend_Exa({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-atkinson",
 });
+const titleFont = Klee_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-title",
+});
 
 export const metadata: Metadata = {
-  title: "Artisan Coffee Co. | Premium Coffee Experience",
-  description:
-    "Experience the finest coffee in town at Artisan Coffee Co. Featuring premium beans, fresh daily roasts, and a warm atmosphere.",
+  title: "Humble Cup Coffee Co.",
+  description: "Humble Cup Coffee Co.",
 };
 
 export default function RootLayout({
@@ -25,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${atkinson.variable}`}>
+      <body
+        className={`${inter.className} ${headerFont.variable} ${titleFont.variable}`}
+      >
         <TopInfoBar />
         {children}
         <Contact />

@@ -47,17 +47,33 @@ export function TopInfoBar() {
           >
             MEET OUR STAFF
           </Link>
+          <Link
+            href="/events"
+            className={pathname === "/events" ? "text-white/50" : "text-white"}
+          >
+            EVENTS
+          </Link>
         </div>
       </div>
       {pathname === "/" && (
-        <div className="absolute top-0 left-4 flex items-center justify-center">
-          <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/pothos_hanging.png"
-            alt="Humble Cup Logo Background"
-            width={200}
-            height={200}
-          />
-        </div>
+        <>
+          <div className="absolute top-0 left-8 flex items-center justify-center">
+            <Image
+              src="https://humble-cup-images.s3.us-east-1.amazonaws.com/plant-2.png"
+              alt="Humble Cup Logo Background"
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="absolute top-10 right-16 flex items-center justify-center">
+            <Image
+              src="https://humble-cup-images.s3.us-east-1.amazonaws.com/plant-3.png"
+              alt="Humble Cup Logo Background"
+              width={200}
+              height={200}
+            />
+          </div>
+        </>
       )}
     </div>
   );

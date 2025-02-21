@@ -4,7 +4,7 @@ import { Coffee, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
 export function Features() {
   return (
-    <section className="py-4 my-8 bg-primary/10">
+    <section className="py-4 mb-8 bg-primary/10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <Image
           src="https://humble-cup-images.s3.us-east-1.amazonaws.com/header_1.png"

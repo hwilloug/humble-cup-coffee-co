@@ -87,7 +87,10 @@
   background-size: contain;
 }
 
-h1,
+h1 {
+  font-family: var(--font-title);
+}
+
 h2 {
   font-family: var(--font-atkinson);
 }

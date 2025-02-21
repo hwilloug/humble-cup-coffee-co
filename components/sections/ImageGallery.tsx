@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import Divider from "../ui/divider";
 
 export default function ImageGallery() {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -38,7 +39,8 @@ export default function ImageGallery() {
       <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
         Gallery
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto justify-center items-center">
+      <Divider />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto justify-center items-center mt-8">
         {[
           "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_1.png",
           "https://humble-cup-images.s3.us-east-1.amazonaws.com/humble_2.png",

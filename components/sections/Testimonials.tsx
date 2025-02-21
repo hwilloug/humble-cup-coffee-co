@@ -1,6 +1,7 @@
 "use client";
 
 import { useParallax } from "@/hooks/useParallax";
+import Divider from "../ui/divider";
 
 export function Testimonials() {
   const scrollY = useParallax();
@@ -13,6 +14,7 @@ export function Testimonials() {
             <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               What Our Customers Say
             </h2>
+            <Divider />
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
               The experiences of our valued customers reflect our commitment to
               excellence.

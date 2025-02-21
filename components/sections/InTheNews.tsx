@@ -1,6 +1,7 @@
 "use client";
 
 import { useParallax } from "@/hooks/useParallax";
+import Divider from "../ui/divider";
 
 export function InTheNews() {
   const scrollY = useParallax();
@@ -13,6 +14,7 @@ export function InTheNews() {
             <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               In The News
             </h2>
+            <Divider />
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
               Read what the press has to say about our commitment to quality and
               community.

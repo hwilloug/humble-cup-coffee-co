@@ -43,7 +43,7 @@ export default function Home() {
 const Divider = () => {
   return (
     <Image
-      src="https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee-bean-divider.png"
+      src="https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee-bean-divider-v3.png"
       alt="Shop Features"
       width={200}
       height={200}
