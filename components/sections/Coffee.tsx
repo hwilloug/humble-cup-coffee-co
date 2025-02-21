@@ -7,7 +7,8 @@ export default function Coffee() {
 
   const imgSize = 150;
 
-  const imgStyle = "hover:scale-110 transition-all duration-300 hover:rotate-1";
+  const imgStyle =
+    "hover:scale-110 transition-all duration-300 hover:rotate-1 w-full";
 
   return (
     <section>
@@ -49,7 +50,7 @@ export default function Coffee() {
           </div>
         </div>
         <div className="mt-12">
-          <h3 className="text-xl sm:text-2xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+          <h3 className="text-lg sm:text-xl tracking-wide mb-4 sm:mb-6 mx-auto text-center leading-loose">
             Crafted with Passion, Roasted with Precision. Our master roasters
             carefully select and blend premium beans from sustainable farms
             worldwide, bringing you a perfect cup every time. Experience the
@@ -74,7 +75,7 @@ export default function Coffee() {
           </div>
         </div>
         <div className="mt-12">
-          <h3 className="text-xl sm:text-2xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+          <h3 className="text-lg sm:text-xl font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center leading-loose">
             Indulge in our freshly baked pastries, made from scratch daily in
             our kitchen. From buttery croissants to delectable muffins and
             artisanal breads, each bite is crafted with the same dedication to

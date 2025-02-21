@@ -56,11 +56,13 @@ export function MenuPreview({ link = true }: { link?: boolean }) {
             </div>
           ))}
         </div>
-        {link && <div className="mt-12 flex justify-center">
-          <Link href="/menu">
-            <Button>View Full Menu</Button>
-          </Link>
-        </div>}
+        {link && (
+          <div className="mt-12 flex justify-center">
+            <Link href="/menu">
+              <Button>View Full Menu</Button>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,15 +1,14 @@
 import { TopInfoBar } from "@/components/sections/TopInfoBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Atkinson_Hyperlegible, Inter, Permanent_Marker } from "next/font/google";
+import { Lexend_Exa, Roboto } from "next/font/google";
 import { Contact } from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-const atkinson = Atkinson_Hyperlegible({
+const inter = Roboto({ subsets: ["latin"], weight: "300" });
+const atkinson = Lexend_Exa({
   subsets: ["latin"],
   weight: "400",
-  display: "swap",
   variable: "--font-atkinson",
 });
 

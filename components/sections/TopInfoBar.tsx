@@ -20,9 +20,7 @@ export function TopInfoBar() {
                 width={75}
                 height={75}
               />
-              <h1 className="text-3xl">
-                Humble Cup Coffee
-              </h1>
+              <h1 className="text-3xl">Humble Cup Coffee</h1>
             </div>
           </Link>
         ) : (

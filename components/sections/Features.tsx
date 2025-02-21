@@ -1,11 +1,27 @@
 "use client";
 
 import { Coffee, Clock, MapPin } from "lucide-react";
-
+import Image from "next/image";
 export function Features() {
   return (
     <section className="py-4 my-8 bg-primary/10">
-      <div className="container mx-auto px-4 my-16 relative">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <Image
+          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/header_1.png"
+          alt="Image 1"
+          width={100}
+          height={100}
+          className="w-full"
+        />
+        <Image
+          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/header_2.png"
+          alt="Image 2"
+          width={100}
+          height={100}
+          className="w-full"
+        />
+      </div>
+      <div className="container mx-auto px-4 my-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-16">
           {[
             {
