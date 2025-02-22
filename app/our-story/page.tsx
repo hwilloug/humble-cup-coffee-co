@@ -1,6 +1,6 @@
 export default function OurStoryPage() {
   return (
-    <main className="min-h-screen">
+    <main>
       {/* History Section */}
       <section>
         <div className="container mx-auto px-4">

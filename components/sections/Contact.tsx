@@ -7,7 +7,7 @@ import { useState } from "react";
 export function Contact() {
   const scrollY = useParallax();
   return (
-    <section className="relative py-16 sm:py-24 pt-96 bg-brick">
+    <section className="relative py-16 sm:py-24 bg-brick">
       <div className="container mx-auto px-4 bg-stone-50 shadow-xl">
         <div className="max-w-6xl mx-auto">
           <div className="text-center p-6 sm:p-8">

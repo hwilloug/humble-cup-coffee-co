@@ -16,7 +16,7 @@ import ImageGallery from "@/components/sections/ImageGallery";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main>
       <Hero />
       <Features />
       <Divider />

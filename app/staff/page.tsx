@@ -23,7 +23,7 @@ export default function Staff() {
         Meet Our Staff
       </h2>
       <Divider />
-      <div className="relative aspect-square rounded-lg grid grid-cols-2 w-full gap-16">
+      <div className="relative rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full sm:gap-16">
         {staff.map((member, index) => (
           <>
             <div className="relative p-14" key={`image-${index}`}>
@@ -42,7 +42,7 @@ export default function Staff() {
                 className="w-full"
               />
             </div>
-            <div className="rounded-lg mt-4" key={`bio-${index}`}>
+            <div className="rounded-lg mt-4 mb-16" key={`bio-${index}`}>
               <h2 className="text-primary mb-4">{member.name}</h2>
               <p>{member.bio}</p>
               <p className="text-primary mt-4">

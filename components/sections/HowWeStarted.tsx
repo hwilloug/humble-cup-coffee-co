@@ -2,9 +2,11 @@
 
 import { useParallax } from "@/hooks/useParallax";
 import Divider from "../ui/divider";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export function HowWeStarted() {
   const scrollY = useParallax();
+  const isMobile = useMediaQuery(780);
 
   return (
     <section className="my-8 py-8 sm:py-16 bg-primary/10">
@@ -44,7 +46,9 @@ export function HowWeStarted() {
                 key={index}
                 className="text-center p-6 sm:p-8 bg-stone-50"
                 style={{
-                  transform: `translateY(${(scrollY - 6000) * (0.05 * (index - 1))}px)`,
+                  transform: isMobile
+                    ? "none"
+                    : `translateY(${(scrollY - 6000) * (0.05 * (index - 1))}px)`,
                 }}
               >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">

@@ -4,9 +4,11 @@ import { useParallax } from "@/hooks/useParallax";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Divider from "../ui/divider";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export function OurStory() {
   const scrollY = useParallax();
+  const isMobile = useMediaQuery(780);
 
   return (
     <section className="py-8 sm:py-16">
@@ -15,7 +17,9 @@ export function OurStory() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
+                transform: isMobile
+                  ? "none"
+                  : `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
               }}
             >
               <img

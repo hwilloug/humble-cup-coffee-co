@@ -2,9 +2,12 @@
 
 import { useParallax } from "@/hooks/useParallax";
 import Divider from "../ui/divider";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export function OurBrand() {
   const scrollY = useParallax();
+
+  const isMobile = useMediaQuery(780);
 
   return (
     <section className="py-16 sm:py-24 bg-background">
@@ -32,7 +35,9 @@ export function OurBrand() {
             <div
               className="relative order-1 md:order-2"
               style={{
-                transform: `translateY(${Math.max(0, (scrollY - 6000) * 0.1)}px)`,
+                transform: isMobile
+                  ? "none"
+                  : `translateY(${Math.max(0, (scrollY - 6000) * 0.1)}px)`,
               }}
             >
               <img
