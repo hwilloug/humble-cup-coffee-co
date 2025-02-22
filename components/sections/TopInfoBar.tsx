@@ -19,14 +19,13 @@ export function TopInfoBar() {
         <div className="hidden sm:flex justify-between items-center">
           {pathname !== "/" ? (
             <Link href="/">
-              <div className="flex items-center justify-center gap-1 sm:gap-2">
+              <div className="flex items-center justify-center gap-1 sm:gap-4 ml-4">
                 <Image
-                  src="https://humble-cup-images.s3.us-east-1.amazonaws.com/humblecup_logo.png"
-                  alt="Humble Cup Logo Background"
-                  width={75}
-                  height={75}
+                  src="https://humble-cup-images.s3.us-east-1.amazonaws.com/humble-logo-dark.png"
+                  alt="Humble Cup Logo"
+                  width={100}
+                  height={100}
                 />
-                <h1 className="text-3xl">Humble Cup Coffee</h1>
               </div>
             </Link>
           ) : (
@@ -74,7 +73,7 @@ export function TopInfoBar() {
                 className="w-full"
               />
             </div>
-            <div className="absolute top-10 right-6 w-1/5">
+            <div className="absolute top-10 right-4 sm:right-12 w-1/5">
               <Image
                 src="https://humble-cup-images.s3.us-east-1.amazonaws.com/plant-3.png"
                 alt="Humble Cup Logo Background"

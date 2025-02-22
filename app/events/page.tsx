@@ -6,8 +6,7 @@ export default function Events() {
       title: "Event 1",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      image:
-        "https://humble-cup-images.s3.us-east-1.amazonaws.com/events_1.png",
+      image: "https://humble-cup-images.s3.us-east-1.amazonaws.com/book.png",
       date: "Last Friday of the Month",
     },
   ];
@@ -20,7 +19,7 @@ export default function Events() {
       <Divider />
       <div className="mt-8">
         {events.map((event, index) => (
-          <div key={`event-${index}`} className="grid grid-cols-2 gap-4 mb-8">
+          <div key={`event-${index}`} className="grid grid-cols-2 gap-8 mb-8">
             <Image
               src={event.image}
               alt={event.title}

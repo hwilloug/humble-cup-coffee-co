@@ -1,41 +1,42 @@
+import Divider from "@/components/ui/divider";
+
 export default function OurStoryPage() {
+  const timeline = [
+    {
+      year: 2020,
+      title: "The Beginning",
+      description:
+        "What started as a small team with big dreams has grown into a passionate community of innovators and problem solvers.",
+    },
+    {
+      year: 2022,
+      title: "Major Milestones",
+      description:
+        "Through dedication and hard work, we've achieved significant growth and expanded our reach to serve clients globally.",
+    },
+  ];
   return (
     <main>
       {/* History Section */}
       <section>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Our Journey
+            <h2 className="text-3xl font-bold text-primary mt-12 mb-4 text-center">
+              Our Story
             </h2>
+            <Divider />
             <div className="space-y-12">
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold">2020</span>
+              {timeline.map((item) => (
+                <div className="flex gap-8 items-start">
+                  <div className="flex-shrink-0 w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
+                    <span className="text-blue-600 font-bold">{item.year}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">The Beginning</h3>
-                  <p className="text-gray-600">
-                    What started as a small team with big dreams has grown into
-                    a passionate community of innovators and problem solvers.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-8 items-start">
-                <div className="flex-shrink-0 w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-blue-600 font-bold">2022</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Major Milestones
-                  </h3>
-                  <p className="text-gray-600">
-                    Through dedication and hard work, we've achieved significant
-                    growth and expanded our reach to serve clients globally.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
