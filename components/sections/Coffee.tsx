@@ -66,11 +66,11 @@ export default function Coffee() {
           <Divider />
           <div className="flex gap-4 justify-center mt-12">
             <Image
-              src="https://humble-cup-images.s3.us-east-1.amazonaws.com/pastries.png"
+              src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_4446.jpg"
               alt="Pastry"
               width={600}
               height={imgSize}
-              className="w-full rounded-lg"
+              className="w-full rounded-lg max-w-2xl"
             />
           </div>
         </div>

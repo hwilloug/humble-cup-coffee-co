@@ -14,7 +14,7 @@ export function TopInfoBar() {
   const menuItemClass = "bg-stone-50 text-primary p-8 hover:bg-stone-200";
 
   return (
-    <div className="mb-4">
+    <div>
       <div className="w-full px-4 py-2 bg-primary text-white">
         <div className="hidden sm:flex justify-between items-center">
           {pathname !== "/" ? (

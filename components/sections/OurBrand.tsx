@@ -41,9 +41,9 @@ export function OurBrand() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
+                src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_7516-Enhanced-NR.jpg"
                 alt="Coffee beans and brand elements"
-                className="w-full h-[400px] sm:h-[600px] object-cover rounded-lg"
+                className="w-full h-[800px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>
           </div>

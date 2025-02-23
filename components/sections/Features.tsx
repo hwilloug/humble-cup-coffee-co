@@ -2,26 +2,20 @@
 
 import { Coffee, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
+import Divider from "../ui/divider";
 export function Features() {
   return (
-    <section className="py-4 mb-8 bg-primary/10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+    <section className="mb-8 pb-12 bg-primary/10">
+      <div>
         <Image
-          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/header_1.png"
+          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_3287.jpg"
           alt="Image 1"
           width={100}
           height={100}
           className="w-full"
         />
-        <Image
-          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/header_2.png"
-          alt="Image 2"
-          width={100}
-          height={100}
-          className="w-full"
-        />
       </div>
-      <div className="container mx-auto px-4 my-16">
+      <div className="container mx-auto px-4 mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-16">
           {[
             {
@@ -55,9 +49,10 @@ export function Features() {
           ))}
         </div>
         <div>
-          <h2 className="mt-12 text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
+          <h2 className="mt-16 text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Hours & Location
           </h2>
+          <Divider />
           <p className="text-gray-600 text-sm sm:text-base text-center mb-4">
             414 Tom Hall St, Fort Mill, SC 29715
           </p>

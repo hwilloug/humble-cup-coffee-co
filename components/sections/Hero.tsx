@@ -8,7 +8,7 @@ export function Hero() {
 
   return (
     <section>
-      <div className="inset-0 flex flex-col items-center justify-center">
+      <div className="inset-0 flex flex-col items-center justify-center bg-[#e0e2e1]">
         <Image
           src="https://humble-cup-images.s3.us-east-1.amazonaws.com/humble-logo.png"
           alt="Humble Cup Logo Background"

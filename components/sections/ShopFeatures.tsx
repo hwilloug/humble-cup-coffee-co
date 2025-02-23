@@ -29,7 +29,7 @@ export function ShopFeatures() {
                 description:
                   "Unwind in our cozy reading area, featuring comfortable seating and a curated collection of books and magazines.",
                 image:
-                  "https://images.unsplash.com/photo-1519682577862-22b62b24e493",
+                  "https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_2141.jpg",
               },
               {
                 icon: Briefcase,

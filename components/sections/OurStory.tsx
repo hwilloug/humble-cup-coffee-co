@@ -23,9 +23,9 @@ export function OurStory() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+                src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1173-Enhanced-NR.jpg"
                 alt="Coffee artisan at work"
-                className="w-full h-[400px] sm:h-[600px] object-cover rounded-lg"
+                className="w-full h-[800px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>
             <div className="space-y-4 sm:space-y-6">
