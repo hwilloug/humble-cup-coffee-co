@@ -35,7 +35,7 @@ export default function Home() {
       <Divider />
       <InTheNews />
       <Divider />
-      <ImageGallery />
+      <ImageGallery preview />
     </main>
   );
 }
