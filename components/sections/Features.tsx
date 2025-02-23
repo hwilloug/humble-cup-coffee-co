@@ -5,7 +5,7 @@ import Image from "next/image";
 import Divider from "../ui/divider";
 export function Features() {
   return (
-    <section className="mb-8 pb-12 bg-primary/10">
+    <section className="mb-8 bg-primary/10">
       <div>
         <Image
           src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_3287.jpg"
@@ -48,7 +48,7 @@ export function Features() {
             </div>
           ))}
         </div>
-        <div>
+        <div className="mb-12">
           <h2 className="mt-16 text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Hours & Location
           </h2>
@@ -64,6 +64,7 @@ export function Features() {
           </p>
         </div>
       </div>
+      <Image src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1318-2.jpg" alt="Image 1" width={100} height={100} className="w-full" />
     </section>
   );
 }
