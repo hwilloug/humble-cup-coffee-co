@@ -20,6 +20,15 @@ export function Hero() {
           }}
         />
       </div>
+      <div>
+        <Image
+          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_3287 2.jpg"
+          alt="Image 1"
+          width={100}
+          height={100}
+          className="w-full"
+        />
+      </div>
     </section>
   );
 }

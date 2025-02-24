@@ -5,5 +5,5 @@ export default function GalleryPage() {
     <div className="container">
       <ImageGallery />
     </div>
-  )
+  );
 }

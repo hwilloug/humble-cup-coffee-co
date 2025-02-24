@@ -6,16 +6,7 @@ import Divider from "../ui/divider";
 export function Features() {
   return (
     <section className="mb-8 bg-primary/10">
-      <div>
-        <Image
-          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_3287.jpg"
-          alt="Image 1"
-          width={100}
-          height={100}
-          className="w-full"
-        />
-      </div>
-      <div className="container mx-auto px-4 mt-12">
+      <div className="container mx-auto px-4 pt-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-16">
           {[
             {
@@ -64,7 +55,13 @@ export function Features() {
           </p>
         </div>
       </div>
-      <Image src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1318-2.jpg" alt="Image 1" width={100} height={100} className="w-full" />
+      <Image
+        src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1318-2.jpg"
+        alt="Image 1"
+        width={100}
+        height={100}
+        className="w-full"
+      />
     </section>
   );
 }

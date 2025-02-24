@@ -58,7 +58,7 @@ export default function Coffee() {
           </h3>
         </div>
       </div>
-      <div className="container mx-auto px-4 my-16">
+      <div className="container mx-auto px-4 my-16 bg-primary/10 p-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Our Pastries
