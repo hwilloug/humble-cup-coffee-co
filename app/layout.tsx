@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${headerFont.variable} ${titleFont.variable} min-h-screen`}
+        className={`${inter.className} ${headerFont.variable} ${titleFont.variable} min-h-screen overflow-x-hidden`}
       >
         <TopInfoBar />
         {children}

@@ -51,7 +51,7 @@ export function Features() {
             Monday - Friday: 6am - 5pm
           </p>
           <p className="text-gray-600 text-sm sm:text-base text-center">
-            Saturday - Sunday: 7am - 5pm
+            Saturday & Sunday: 7am - 5pm
           </p>
         </div>
       </div>
