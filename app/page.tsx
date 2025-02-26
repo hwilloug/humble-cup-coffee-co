@@ -13,6 +13,7 @@ import { InTheNews } from "@/components/sections/InTheNews";
 import Coffee from "@/components/sections/Coffee";
 import Image from "next/image";
 import ImageGallery from "@/components/sections/ImageGallery";
+import { Pastries } from "@/components/sections/Pastries";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Features />
       <Divider />
       <Coffee />
+      <Pastries />
       <Divider />
       <ShopFeatures />
       <Divider />
