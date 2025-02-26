@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function Menu() {
   const menuItems: {
     section: string;
+    subtitle?: string;
     items: {
       name: string;
       smOz?: number;
@@ -21,6 +22,7 @@ export default function Menu() {
   }[] = [
     {
       section: "Coffee & Espresso",
+      subtitle: "All coffee drinks made with locally roasted beans",
       items: [
         {
           name: "Coffee",
@@ -92,6 +94,80 @@ export default function Menu() {
         },
       ],
     },
+    {
+      section: "Tea & Other",
+      subtitle: "All tea drinks made with locally sourced tea",
+      items: [
+        {
+          name: "Matcha",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Green tea powder and steamed milk",
+        },
+        {
+          name: "Loose Leaf Tea",
+          smPrice: 4,
+          smOz: 12,
+          lgPrice: 4.5,
+          lgOz: 16,
+          smIcedPrice: 4.5,
+          smIcedOz: 16,
+          lgIcedPrice: 5,
+          lgIcedOz: 24,
+          description: "Choose from our full selection of loose leaf tea",
+        },
+        {
+          name: "Chai Latte",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Spiced tea and steamed milk",
+        },
+        {
+          name: "London Fog",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Black tea and steamed milk",
+        },
+        {
+          name: "Cardamom Rose Latte",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Black tea and rose and cardamom",
+        },
+        {
+          name: "Hot Chocolate",
+          smPrice: 3.5,
+          smOz: 12,
+          lgPrice: 4,
+          lgOz: 16,
+          description: "Hot chocolate with whipped cream",
+        },
+      ],
+    },
   ];
 
   const houseMadeFlavors = ["Brown Sugar Rosemary", "Vanilla Sage"];
@@ -114,7 +190,7 @@ export default function Menu() {
       <div className="container mx-auto">
         <MenuPreview link={false} />
 
-        <div className="relative p-8 px-4 max-w-xl md:max-w-2xl mx-auto">
+        <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
           <Image
             src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
             width={500}
@@ -128,7 +204,7 @@ export default function Menu() {
             </h1>
             <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
 
-            <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {menuItems.map((section, idx) => (
                 <div key={idx} className="relative">
                   <div className="border-b border-amber-100 pb-12 last:border-b-0">
@@ -136,7 +212,7 @@ export default function Menu() {
                       {section.section}
                     </h2>
                     <p className="text-center text-sm text-amber-700 mb-8">
-                      All coffee drinks made with locally roasted beans
+                      {section.subtitle}
                     </p>
 
                     <div className="grid gap-6">
@@ -217,55 +293,58 @@ export default function Menu() {
                           </div>
                         </div>
                       ))}
-                      <div>
-                        <h2 className="text-2xl font-light my-2 text-center text-amber-900">
-                          House Made Flavors
-                        </h2>
-                        <div className="flex flex-wrap gap-2 my-4 justify-center">
-                          {houseMadeFlavors.map((flavor, flavorIdx) => (
-                            <div
-                              key={flavorIdx}
-                              className="bg-amber-700 text-white rounded-lg px-2 py-1"
-                            >
-                              <h3 className="text-md font-medium">{flavor}</h3>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <h2 className="text-2xl font-light my-2 text-center text-amber-900">
-                          Flavors
-                        </h2>
-                        <div className="flex flex-wrap gap-2 my-4 justify-center">
-                          {flavors.map((flavor, flavorIdx) => (
-                            <div
-                              key={flavorIdx}
-                              className="bg-amber-600 text-white rounded-lg px-2 py-1"
-                            >
-                              <h3 className="text-md font-medium">{flavor}</h3>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <h2 className="text-2xl font-light my-2 text-center text-amber-900">
-                          Milk Options
-                        </h2>
-                        <div className="flex flex-wrap gap-2 my-4 justify-center">
-                          {milkOptions.map((milk, milkIdx) => (
-                            <div
-                              key={milkIdx}
-                              className="bg-blue-200 rounded-lg px-2 py-1"
-                            >
-                              <h3 className="text-md font-medium">{milk}</h3>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="space-y-16">
+              <div>
+                <h2 className="text-2xl font-light my-2 text-center text-amber-900">
+                  House Made Flavors
+                </h2>
+                <div className="flex flex-wrap gap-2 my-4 justify-center">
+                  {houseMadeFlavors.map((flavor, flavorIdx) => (
+                    <div
+                      key={flavorIdx}
+                      className="bg-amber-700 text-white rounded-lg px-2 py-1"
+                    >
+                      <h3 className="text-md font-medium">{flavor}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h2 className="text-2xl font-light my-2 text-center text-amber-900">
+                  Flavors
+                </h2>
+                <div className="flex flex-wrap gap-2 my-4 justify-center">
+                  {flavors.map((flavor, flavorIdx) => (
+                    <div
+                      key={flavorIdx}
+                      className="bg-amber-600 text-white rounded-lg px-2 py-1"
+                    >
+                      <h3 className="text-md font-medium">{flavor}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h2 className="text-2xl font-light my-2 text-center text-amber-900">
+                  Milk Options
+                </h2>
+                <div className="flex flex-wrap gap-2 my-4 justify-center">
+                  {milkOptions.map((milk, milkIdx) => (
+                    <div
+                      key={milkIdx}
+                      className="bg-blue-200 rounded-lg px-2 py-1"
+                    >
+                      <h3 className="text-md font-medium">{milk}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="grid grid-cols-3 gap-4">
