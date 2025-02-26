@@ -6,6 +6,9 @@ import Divider from "../ui/divider";
 import Link from "next/link";
 import { Gallery } from "react-grid-gallery";
 import { Button } from "../ui/button";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 export default function ImageGallery({
   preview = false,
 }: {
@@ -13,6 +16,8 @@ export default function ImageGallery({
 }) {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleImages, setVisibleImages] = useState<boolean[]>([]);
+  const [open, setOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
 
   const allImages = [
     {
@@ -176,12 +181,27 @@ export default function ImageGallery({
   }, []);
 
   return (
-    <section className="my-12 mx-4">
+    <section className="my-12 mx-4 w-full">
       <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
         Gallery
       </h2>
       <Divider />
-      <Gallery images={images} enableImageSelection={false} />
+      <div className="container w-full mx-auto px-4">
+        <Gallery
+          images={images}
+          enableImageSelection={false}
+          onClick={(index) => {
+            setOpen(true);
+            setCurrentImage(index);
+          }}
+        />
+        <Lightbox
+          slides={images}
+          open={open}
+          index={currentImage}
+          close={() => setOpen(false)}
+        />
+      </div>
       {preview && (
         <Link href="/gallery" className="flex justify-center">
           <Button className="bg-primary text-white px-4 py-2 mt-4 rounded-md">

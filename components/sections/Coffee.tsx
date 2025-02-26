@@ -60,7 +60,7 @@ export default function Coffee() {
             Our Coffee
           </h2>
           <Divider />
-          <div className="grid grid-cols-4 gap-4 mt-12 bg-secondary p-4 rounded-lg">
+          <div className="flex gap-4 mt-12 bg-secondary p-4 rounded-lg">
             {coffeeBags.map((bag, index) => (
               <Image
                 key={bag.alt}

@@ -4,7 +4,7 @@ import Divider from "../ui/divider";
 export function Pastries() {
   return (
     <section className="bg-primary/10">
-      <div className="container mx-auto px-4 my-16 p-12">
+      <div className="container mx-auto px-4 my-16 p-12 max-w-4xl">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
             Our Pastries
