@@ -96,6 +96,36 @@ export default function Menu() {
       ],
     },
     {
+      section: "Specialty Drinks",
+      subtitle: "All specialty drinks are made with locally sourced ingredients",
+      items: [
+        {
+          name: "Humble Bear Latte",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Espresso and steamed milk with honey, etc",
+        },
+        {
+          name: "Cinnamon Bun Latte",
+          smPrice: 5,
+          smOz: 12,
+          lgPrice: 6,
+          lgOz: 16,
+          smIcedPrice: 5.5,
+          smIcedOz: 16,
+          lgIcedPrice: 6.5,
+          lgIcedOz: 24,
+          description: "Espresso and steamed milk with honey, etc",
+        },
+      ],
+    },
+    {
       section: "Tea & Other",
       subtitle: "All tea drinks made with locally sourced tea",
       items: [
@@ -193,10 +223,12 @@ export default function Menu() {
       items: [
         {
           name: "Select Pastries",
+          description: "Choose from our daily selection of pastries",
           price: "$5.00 - $6.00",
         },
         {
           name: "Gluten Free Options",
+          description: "Choose from our daily selection of gluten free pastries",
           price: "$5.00 - $6.00",
         },
       ],
