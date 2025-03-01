@@ -1,5 +1,5 @@
 import Divider from "@/components/ui/divider";
-
+import Image from "next/image";
 export default function OurStoryPage() {
   const timeline = [
     {
@@ -7,12 +7,16 @@ export default function OurStoryPage() {
       title: "The Beginning",
       description:
         "What started as a small team with big dreams has grown into a passionate community of innovators and problem solvers.",
+      image: "/our-story/2020.jpg",
+      imageAlt: "2020",
     },
     {
       year: 2022,
       title: "Major Milestones",
       description:
         "Through dedication and hard work, we've achieved significant growth and expanded our reach to serve clients globally.",
+      image: "/our-story/2022.jpg",
+      imageAlt: "2022",
     },
   ];
   return (
@@ -25,13 +29,20 @@ export default function OurStoryPage() {
               Our Story
             </h2>
             <Divider />
-            <div className="space-y-12">
+            <div className="space-y-24">
               {timeline.map((item) => (
-                <div className="flex gap-8 items-start">
+                <div className="grid grid-cols-[auto_1fr] gap-8 items-center">
                   <div className="flex-shrink-0 w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center">
                     <span className="text-blue-600 font-bold">{item.year}</span>
                   </div>
                   <div>
+                    <Image
+                      src={item.image}
+                      alt={item.imageAlt}
+                      className="rounded-lg"
+                      width={100}
+                      height={100}
+                    />
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                     <p className="text-gray-600">{item.description}</p>
                   </div>
