@@ -1,6 +1,7 @@
 "use client";
 
 import { MenuPreview } from "@/components/sections/MenuPreview";
+import Divider from "@/components/ui/divider";
 import Image from "next/image";
 
 export default function Menu() {
@@ -185,6 +186,48 @@ export default function Menu() {
 
   const milkOptions = ["Whole", "1%", "Almond", "Oat"];
 
+  const foodMenu = [
+    {
+      section: "Pastries & Snacks",
+      subtitle: "All pastries and snacks are made in house",
+      items: [
+        {
+          name: "Select Pastries",
+          price: "$5.00 - $6.00",
+        },
+        {
+          name: "Gluten Free Options",
+          price: "$5.00 - $6.00",
+        },
+      ],
+    },
+    {
+      section: "Lunch",
+      items: [
+        {
+          name: "Chicken Cesar Wrap",
+          description: "Chicken, lettuce, tomato, and croutons",
+          price: "$10.00",
+        },
+        {
+          name: "Salad",
+          description: "Mixed greens, tomato, cucumber, and croutons",
+          price: "$10.00",
+        },
+      ],
+    },
+    {
+      section: "Desserts",
+      items: [
+        {
+          name: "Empanadaria Bakery Box",
+          description: "12 empanadas, 12 cookies, 12 muffins, 12 cupcakes",
+          price: "$10.00",
+        },
+      ],
+    },
+  ];
+
   return (
     <section>
       <div className="container mx-auto">
@@ -199,9 +242,7 @@ export default function Menu() {
             alt="scalloped edge"
           />
           <div className="relative p-8 rounded-lg shadow-md bg-stone-50">
-            <h1 className="text-4xl font-light text-center my-4">
-              Everyday Menu
-            </h1>
+            <h1 className="text-4xl font-light text-center my-4">Drink Menu</h1>
             <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -387,6 +428,63 @@ export default function Menu() {
                   />
                 </svg>
               </div>
+            </div>
+          </div>
+          <Image
+            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            alt="Pothos Hanging"
+            width={500}
+            height={500}
+            className="rotate-180 w-full"
+          />
+        </div>
+        <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
+          <Image
+            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            width={500}
+            height={500}
+            className="w-full"
+            alt="scalloped edge"
+          />
+          <div className="relative p-8 rounded-lg shadow-md bg-stone-50">
+            <h1 className="text-4xl font-light text-center my-4">Food Menu</h1>
+            <Divider />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {foodMenu.map((section, idx) => (
+                <div key={idx} className="relative">
+                  <div className="border-b border-amber-100 pb-12 last:border-b-0">
+                    <h2 className="text-2xl font-light mb-2 text-center text-amber-900">
+                      {section.section}
+                    </h2>
+                    <p className="text-center text-sm text-amber-700 mb-8">
+                      {section.subtitle}
+                    </p>
+
+                    <div className="grid gap-6">
+                      {section.items.map((item, itemIdx) => (
+                        <div
+                          key={itemIdx}
+                          className="flex flex-col sm:flex-row sm:items-center justify-between py-3 px-4 rounded-lg hover:bg-amber-50 transition-colors"
+                        >
+                          <div className="flex-1">
+                            <h3 className="text-lg font-medium text-amber-900">
+                              {item.name}
+                            </h3>
+                            {item.description && (
+                              <p className="text-sm text-amber-700">
+                                {item.description}
+                              </p>
+                            )}
+                          </div>
+                          <div className="flex justify-end sm:justify-start gap-3">
+                            <span className="font-medium">{item.price}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <Image
