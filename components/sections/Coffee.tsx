@@ -91,30 +91,43 @@ export default function Coffee() {
             </DialogTitle>
             <Divider />
           </DialogHeader>
-          <DialogDescription className="text-foreground/80 space-y-4 text-center">
-            <div className="p-3 bg-primary/30 rounded-md ">
-              <h3 className="text-lg text-primary font-bold mb-2">Blend</h3>
-              <div className="flex flex-col gap-1 justify-center">
-                {openIndex !== null &&
-                  coffeeBags[openIndex].blend.map((blend, i) => (
-                    <p key={i}>{blend}</p>
-                  ))}
+          <DialogDescription className="text-foreground/80 space-y-4">
+            <div className="grid grid-cols-2 items-center gap-1">
+              {openIndex !== null && (
+                <Image
+                  src={coffeeBags[openIndex].src}
+                  alt={coffeeBags[openIndex].alt}
+                  width={imgSize}
+                  height={imgSize}
+                  className="w-full"
+                />
+              )}
+              <div className="space-y-4">
+                <div className="p-3 bg-primary/30 rounded-md ">
+                  <h3 className="text-lg text-primary font-bold mb-2">Blend</h3>
+                  <div className="flex flex-col gap-1 justify-center">
+                    {openIndex !== null &&
+                      coffeeBags[openIndex].blend.map((blend, i) => (
+                        <p key={i}>{blend}</p>
+                      ))}
+                  </div>
+                </div>
+                <div className="p-3 bg-primary/30 rounded-md">
+                  <h3 className="text-lg text-primary font-bold mb-2">Notes</h3>
+                  <div className="flex flex-col gap-1 justify-center">
+                    {openIndex !== null &&
+                      coffeeBags[openIndex].notes.map((note, i) => (
+                        <p key={i}>{note}</p>
+                      ))}
+                  </div>
+                </div>
+                <div className="p-3 bg-primary/30 rounded-md">
+                  <h3 className="text-lg text-primary font-bold mb-2">Roast</h3>
+                  <p>{openIndex !== null && coffeeBags[openIndex].roast}</p>
+                </div>
               </div>
             </div>
-            <div className="p-3 bg-primary/30 rounded-md">
-              <h3 className="text-lg text-primary font-bold mb-2">Notes</h3>
-              <div className="flex flex-col gap-1 justify-center">
-                {openIndex !== null &&
-                  coffeeBags[openIndex].notes.map((note, i) => (
-                    <p key={i}>{note}</p>
-                  ))}
-              </div>
-            </div>
-            <div className="p-3 bg-primary/30 rounded-md">
-              <h3 className="text-lg text-primary font-bold mb-2">Roast</h3>
-              <p>{openIndex !== null && coffeeBags[openIndex].roast}</p>
-            </div>
-            <div>
+            <div className="text-center">
               <p>$16.99</p>
             </div>
             <div className="p-3 mt-6 flex justify-center">

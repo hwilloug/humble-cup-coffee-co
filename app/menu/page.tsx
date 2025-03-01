@@ -97,7 +97,8 @@ export default function Menu() {
     },
     {
       section: "Specialty Drinks",
-      subtitle: "All specialty drinks are made with locally sourced ingredients",
+      subtitle:
+        "All specialty drinks are made with locally sourced ingredients",
       items: [
         {
           name: "Humble Bear Latte",
@@ -228,7 +229,8 @@ export default function Menu() {
         },
         {
           name: "Gluten Free Options",
-          description: "Choose from our daily selection of gluten free pastries",
+          description:
+            "Choose from our daily selection of gluten free pastries",
           price: "$5.00 - $6.00",
         },
       ],
