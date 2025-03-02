@@ -5,7 +5,7 @@ import Image from "next/image";
 import Divider from "../ui/divider";
 export function Features() {
   return (
-    <section className="mb-8 bg-primary/10">
+    <section className="mb-8 bg-primary/10 lg:pb-16">
       <div className="container mx-auto px-4 pt-16">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16">
           {[
@@ -60,7 +60,7 @@ export function Features() {
         alt="Image 1"
         width={100}
         height={100}
-        className="w-full"
+        className="w-full lg:w-3/4 mx-auto"
       />
     </section>
   );

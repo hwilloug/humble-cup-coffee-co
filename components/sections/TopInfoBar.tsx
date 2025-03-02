@@ -64,7 +64,7 @@ export function TopInfoBar() {
         </div>
         {pathname === "/" && (
           <>
-            <div className="absolute top-0 left-0 w-1/4">
+            <div className="absolute top-0 left-0 w-1/4 lg:w-1/5 lg:left-12">
               <Image
                 src="https://humble-cup-images.s3.us-east-1.amazonaws.com/plant-2.png"
                 alt="Humble Cup Logo Background"
@@ -73,7 +73,7 @@ export function TopInfoBar() {
                 className="w-full"
               />
             </div>
-            <div className="absolute top-10 right-4 sm:right-12 w-1/5">
+            <div className="absolute top-10 right-4 sm:right-12 w-1/5 lg:w-1/6 lg:right-24">
               <Image
                 src="https://humble-cup-images.s3.us-east-1.amazonaws.com/plant-3.png"
                 alt="Humble Cup Logo Background"
