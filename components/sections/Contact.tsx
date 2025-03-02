@@ -1,8 +1,6 @@
 "use client";
 
-import { useParallax } from "@/hooks/useParallax";
-import { MapPin, Phone, Clock, Mail, Send, Instagram } from "lucide-react";
-import { useState } from "react";
+import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import Divider from "../ui/divider";
 import Image from "next/image";
 export function Contact() {
@@ -86,7 +84,7 @@ export function Contact() {
                     className="flex items-center gap-4"
                   >
                     <Image
-                      src="https://humble-cup-images.s3.us-east-1.amazonaws.com/instagram.svg"
+                      src="/instagram.svg"
                       alt="Instagram"
                       width={24}
                       height={24}
@@ -99,7 +97,7 @@ export function Contact() {
                     className="flex items-center gap-4"
                   >
                     <Image
-                      src="https://humble-cup-images.s3.us-east-1.amazonaws.com/facebook.svg"
+                      src="/facebook.svg"
                       alt="Facebook"
                       width={24}
                       height={24}

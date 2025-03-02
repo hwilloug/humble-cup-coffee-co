@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Divider from "../ui/divider";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import Image from "next/image";
 
 export function OurStory() {
   const scrollY = useParallax();
@@ -22,9 +23,11 @@ export function OurStory() {
                   : `translateY(${Math.max(0, (scrollY - 5000) * 0.1)}px)`,
               }}
             >
-              <img
-                src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1173-Enhanced-NR.jpg"
+              <Image
+                src="/DSC_1173-Enhanced-NR.jpg"
                 alt="Coffee artisan at work"
+                width={100}
+                height={100}
                 className="w-full h-[800px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>

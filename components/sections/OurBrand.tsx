@@ -3,7 +3,7 @@
 import { useParallax } from "@/hooks/useParallax";
 import Divider from "../ui/divider";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
-
+import Image from "next/image";
 export function OurBrand() {
   const scrollY = useParallax();
 
@@ -40,9 +40,11 @@ export function OurBrand() {
                   : `translateY(${Math.max(0, (scrollY - 6000) * 0.1)}px)`,
               }}
             >
-              <img
-                src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_7516-Enhanced-NR.jpg"
+              <Image
+                src="/DSC_7516-Enhanced-NR.jpg"
                 alt="Coffee beans and brand elements"
+                width={100}
+                height={100}
                 className="w-full h-[800px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>

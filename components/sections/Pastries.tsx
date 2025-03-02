@@ -12,7 +12,7 @@ export function Pastries() {
           <Divider />
           <div className="flex gap-4 justify-center mt-12">
             <Image
-              src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_4446.jpg"
+              src="/DSC_4446.jpg"
               alt="Pastry"
               width={600}
               height={600}

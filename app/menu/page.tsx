@@ -3,265 +3,9 @@
 import { MenuPreview } from "@/components/sections/MenuPreview";
 import Divider from "@/components/ui/divider";
 import Image from "next/image";
+import { MENU_ITEMS, HOUSE_MADE_FLAVORS, FLAVORS, MILK_OPTIONS, FOOD_MENU, IMAGE_URL } from "@/lib/consts";
 
 export default function Menu() {
-  const menuItems: {
-    section: string;
-    subtitle?: string;
-    items: {
-      name: string;
-      smOz?: number;
-      smPrice?: number;
-      lgOz?: number;
-      lgPrice?: number;
-      smIcedPrice?: number;
-      smIcedOz?: number;
-      lgIcedPrice?: number;
-      lgIcedOz?: number;
-      description?: string;
-    }[];
-  }[] = [
-    {
-      section: "Coffee & Espresso",
-      subtitle: "All coffee drinks made with locally roasted beans",
-      items: [
-        {
-          name: "Coffee",
-          smOz: 12,
-          smPrice: 3,
-          lgOz: 16,
-          lgPrice: 3.5,
-          description: "Choose from our daily selection of drip coffee",
-        },
-        {
-          name: "French Press",
-          smOz: 12,
-          smPrice: 4.5,
-          description: "Choose from our full selection of coffee beans",
-        },
-        {
-          name: "Espresso",
-          smOz: 4,
-          smPrice: 3,
-        },
-        {
-          name: "Americano",
-          smOz: 12,
-          smPrice: 3,
-          lgOz: 16,
-          lgPrice: 4,
-          smIcedOz: 16,
-          smIcedPrice: 3.5,
-          lgIcedOz: 24,
-          lgIcedPrice: 4.5,
-          description: "Espresso and hot water",
-        },
-        {
-          name: "Cortado",
-          smOz: 4,
-          smPrice: 4,
-          description: "Equal parts espresso and steamed milk",
-        },
-        {
-          name: "Cappuccino",
-          smOz: 12,
-          smPrice: 4.5,
-          description: "Espresso and steamed milk with a layer of foam",
-        },
-        {
-          name: "Latte",
-          smOz: 12,
-          smPrice: 5,
-          lgOz: 16,
-          lgPrice: 5.5,
-          smIcedPrice: 5,
-          smIcedOz: 16,
-          lgIcedPrice: 6,
-          lgIcedOz: 24,
-          description: "Espresso and steamed milk",
-        },
-        {
-          name: "Cold Brew",
-          smIcedOz: 16,
-          smIcedPrice: 4.5,
-          lgIcedOz: 24,
-          lgIcedPrice: 6,
-        },
-        {
-          name: "Affagato",
-          smPrice: 6,
-          smOz: 2,
-          description: "Espresso over gelato",
-        },
-      ],
-    },
-    {
-      section: "Tea & Other",
-      subtitle: "All tea drinks made with locally sourced tea",
-      items: [
-        {
-          name: "Matcha",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Green tea powder and steamed milk",
-        },
-        {
-          name: "Loose Leaf Tea",
-          smPrice: 4,
-          smOz: 12,
-          lgPrice: 4.5,
-          lgOz: 16,
-          smIcedPrice: 4.5,
-          smIcedOz: 16,
-          lgIcedPrice: 5,
-          lgIcedOz: 24,
-          description: "Choose from our full selection of loose leaf tea",
-        },
-        {
-          name: "Chai Latte",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Spiced tea and steamed milk",
-        },
-        {
-          name: "London Fog",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Black tea and steamed milk",
-        },
-        {
-          name: "Cardamom Rose Latte",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Black tea and rose and cardamom",
-        },
-        {
-          name: "Hot Chocolate",
-          smPrice: 3.5,
-          smOz: 12,
-          lgPrice: 4,
-          lgOz: 16,
-          description: "Hot chocolate with whipped cream",
-        },
-      ],
-    },
-    {
-      section: "Specialty Drinks",
-      subtitle:
-        "All specialty drinks are made with locally sourced ingredients",
-      items: [
-        {
-          name: "Humble Bear Latte",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Espresso and steamed milk with honey, etc",
-        },
-        {
-          name: "Cinnamon Bun Latte",
-          smPrice: 5,
-          smOz: 12,
-          lgPrice: 6,
-          lgOz: 16,
-          smIcedPrice: 5.5,
-          smIcedOz: 16,
-          lgIcedPrice: 6.5,
-          lgIcedOz: 24,
-          description: "Espresso and steamed milk with honey, etc",
-        },
-      ],
-    }
-  ];
-
-  const houseMadeFlavors = ["Brown Sugar Rosemary", "Vanilla Sage"];
-
-  const flavors = [
-    "Vanilla",
-    "Caramel",
-    "Hazelnut",
-    "Lavendar",
-    "Sugar Free Vanilla",
-    "Local Honey",
-    "Dark Mocha",
-    "White Mocha",
-  ];
-
-  const milkOptions = ["Whole", "1%", "Almond", "Oat"];
-
-  const foodMenu = [
-    {
-      section: "Pastries & Snacks",
-      subtitle: "All pastries and snacks are made in house",
-      items: [
-        {
-          name: "Select Pastries",
-          description: "Choose from our daily selection of pastries",
-          price: "$5.00 - $6.00",
-        },
-        {
-          name: "Gluten Free Options",
-          description:
-            "Choose from our daily selection of gluten free pastries",
-          price: "$5.00 - $6.00",
-        },
-      ],
-    },
-    {
-      section: "Lunch",
-      items: [
-        {
-          name: "Chicken Cesar Wrap",
-          description: "Chicken, lettuce, tomato, and croutons",
-          price: "$10.00",
-        },
-        {
-          name: "Salad",
-          description: "Mixed greens, tomato, cucumber, and croutons",
-          price: "$10.00",
-        },
-      ],
-    },
-    {
-      section: "Desserts",
-      items: [
-        {
-          name: "Empanadaria Bakery Box",
-          description: "12 empanadas, 12 cookies, 12 muffins, 12 cupcakes",
-          price: "$10.00",
-        },
-      ],
-    },
-  ];
-
   return (
     <section>
       <div className="container mx-auto">
@@ -269,7 +13,7 @@ export default function Menu() {
 
         <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            src="/scalloped_edge.png"
             width={500}
             height={500}
             className="w-full"
@@ -280,7 +24,7 @@ export default function Menu() {
             <div className="w-20 h-1 bg-amber-800 mx-auto mb-12 rounded-full"></div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {menuItems.map((section, idx) => (
+              {MENU_ITEMS.map((section, idx) => (
                 <div key={idx} className="relative">
                   <div className="border-b border-amber-100 pb-12 last:border-b-0">
                     <h2 className="text-2xl font-light mb-2 text-center text-amber-900">
@@ -380,7 +124,7 @@ export default function Menu() {
                   House Made Flavors
                 </h2>
                 <div className="flex flex-wrap gap-2 my-4 justify-center">
-                  {houseMadeFlavors.map((flavor, flavorIdx) => (
+                  {HOUSE_MADE_FLAVORS.map((flavor, flavorIdx) => (
                     <div
                       key={flavorIdx}
                       className="bg-amber-700 text-white rounded-lg px-2 py-1"
@@ -395,7 +139,7 @@ export default function Menu() {
                   Flavors
                 </h2>
                 <div className="flex flex-wrap gap-2 my-4 justify-center">
-                  {flavors.map((flavor, flavorIdx) => (
+                  {FLAVORS.map((flavor, flavorIdx) => (
                     <div
                       key={flavorIdx}
                       className="bg-amber-600 text-white rounded-lg px-2 py-1"
@@ -410,7 +154,7 @@ export default function Menu() {
                   Milk Options
                 </h2>
                 <div className="flex flex-wrap gap-2 my-4 justify-center">
-                  {milkOptions.map((milk, milkIdx) => (
+                  {MILK_OPTIONS.map((milk, milkIdx) => (
                     <div
                       key={milkIdx}
                       className="bg-blue-200 rounded-lg px-2 py-1"
@@ -465,7 +209,7 @@ export default function Menu() {
             </div>
           </div>
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            src="/scalloped_edge.png"
             alt="Pothos Hanging"
             width={500}
             height={500}
@@ -474,7 +218,7 @@ export default function Menu() {
         </div>
         <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            src="/scalloped_edge_blue.png"
             width={500}
             height={500}
             className="w-full"
@@ -484,7 +228,7 @@ export default function Menu() {
             <h1 className="text-4xl font-light text-center my-4">Food Menu</h1>
             <Divider />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {foodMenu.map((section, idx) => (
+              {FOOD_MENU.map((section, idx) => (
                 <div key={idx} className="relative">
                   <div className="border-b border-amber-100 pb-12 last:border-b-0">
                     <h2 className="text-2xl font-light mb-2 text-center text-amber-900">
@@ -522,7 +266,7 @@ export default function Menu() {
             </div>
           </div>
           <Image
-            src="https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png"
+            src="/scalloped_edge_blue.png"
             alt="Pothos Hanging"
             width={500}
             height={500}

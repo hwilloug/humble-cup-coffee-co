@@ -4,36 +4,18 @@ import { useParallax } from "@/hooks/useParallax";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Divider from "../ui/divider";
+import { SEASONAL_MENU } from "@/lib/consts";
 
 export function MenuPreview({ link = true }: { link?: boolean }) {
   return (
     <section className={`my-8 py-8 ${link ? "bg-primary/10" : ""}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-screen-xl">
         <h2 className="text-3xl sm:text-4xl text-primary font-light text-center mb-4 tracking-wide">
           Seasonal Menu
         </h2>
         <Divider />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
-          {[
-            {
-              name: "Classic Cappuccino",
-              price: "$4.50",
-              image:
-                "https://images.unsplash.com/photo-1534778101976-62847782c213",
-            },
-            {
-              name: "Iced Caramel Latte",
-              price: "$5.00",
-              image:
-                "https://images.unsplash.com/photo-1517701604599-bb29b565090c",
-            },
-            {
-              name: "Mocha Supreme",
-              price: "$5.50",
-              image:
-                "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d",
-            },
-          ].map((drink, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4">
+          {SEASONAL_MENU.map((drink, index) => (
             <div
               key={index}
               className="group bg-stone-50 transform transition-all duration-500 shadow-lg rounded-lg hover:scale-105 hover:shadow-2xl"

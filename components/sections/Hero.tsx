@@ -10,7 +10,7 @@ export function Hero() {
     <section>
       <div className="inset-0 flex flex-col items-center justify-center bg-[#e0e2e1]">
         <Image
-          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/humble-logo.png"
+          src="/humble-logo.png"
           alt="Humble Cup Logo Background"
           className="object-contain w-1/2 lg:w-1/3 my-8"
           width={200}
@@ -22,7 +22,7 @@ export function Hero() {
       </div>
       <div>
         <Image
-          src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_3287 2.jpg"
+          src="/DSC_3287 2.jpg"
           alt="Image 1"
           width={100}
           height={100}

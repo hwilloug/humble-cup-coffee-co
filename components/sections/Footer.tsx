@@ -7,13 +7,13 @@ export default function Footer() {
         {/* Brand Section */}
         <div className="flex flex-row justify-center items-center mb-8 gap-2">
           <Image
-            src="/icon-dark.svg"
+            src="/humble-logo-dark.png"
             alt="Humble Cup Coffee Co."
             width={100}
             height={100}
           />
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-light tracking-wide">
+          <h2 className="text-2xl sm:text-3xl font-light tracking-wide">
               Humble Cup Coffee Co.
             </h2>
             <p className="mt-2 text-gray-300">
@@ -88,7 +88,7 @@ export default function Footer() {
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-gray-300">
                   <Image
-                    src="https://humble-cup-images.s3.us-east-1.amazonaws.com/facebook-white.svg"
+                    src="/facebook-white.svg"
                     alt="Facebook"
                     width={24}
                     height={24}
@@ -96,7 +96,7 @@ export default function Footer() {
                 </a>
                 <a href="#" className="hover:text-gray-300">
                   <Image
-                    src="https://humble-cup-images.s3.us-east-1.amazonaws.com/instagram-white.svg"
+                    src="/instagram-white.svg"
                     alt="Instagram"
                     width={24}
                     height={24}

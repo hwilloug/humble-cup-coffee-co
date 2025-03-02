@@ -3,14 +3,15 @@
 import { useParallax } from "@/hooks/useParallax";
 import { BookOpen, Briefcase, Baby } from "lucide-react";
 import Divider from "../ui/divider";
+import Image from "next/image";
 
 export function ShopFeatures() {
   const scrollY = useParallax();
 
   return (
     <section className="py-8 sm:py-16">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 max-w-screen-2xl">
+        <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6">
               Experience Our Space
@@ -28,24 +29,21 @@ export function ShopFeatures() {
                 title: "Reading Lounge",
                 description:
                   "Unwind in our cozy reading area, featuring comfortable seating and a curated collection of books and magazines.",
-                image:
-                  "https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_2141.jpg",
+                image: "/DSC_2141.jpg",
               },
               {
                 icon: Briefcase,
                 title: "Workspace",
                 description:
                   "A productive environment with high-speed WiFi, power outlets, and comfortable seating for remote work or study sessions.",
-                image:
-                  "https://images.unsplash.com/photo-1497366216548-37526070297c",
+                image: "/DSC_1140-Enhanced-NR.jpg",
               },
               {
                 icon: Baby,
                 title: "Kids' Corner",
                 description:
                   "A safe and fun space for children, equipped with toys, books, and activities to keep little ones entertained.",
-                image:
-                  "https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b",
+                image: "/DSC_1140-Enhanced-NR.jpg",
               },
             ].map((feature, index) => (
               <div
@@ -53,9 +51,11 @@ export function ShopFeatures() {
                 className="relative group shadow-lg rounded-lg bg-stone-50"
               >
                 <div className="relative h-[300px] sm:h-[400px]">
-                  <img
+                  <Image
                     src={feature.image}
                     alt={feature.title}
+                    width={100}
+                    height={100}
                     className="w-full h-full object-cover transition-transform duration-700 rounded-t-lg"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />

@@ -56,7 +56,7 @@ export function Features() {
         </div>
       </div>
       <Image
-        src="https://humble-cup-images.s3.us-east-1.amazonaws.com/DSC_1318-2.jpg"
+        src="/DSC_1318-2.jpg"
         alt="Image 1"
         width={100}
         height={100}
