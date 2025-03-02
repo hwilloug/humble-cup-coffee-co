@@ -24,18 +24,18 @@ export default function Coffee() {
 
   const coffeeBags = [
     {
-      src: "https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee_bag_1.png",
-      alt: "Compassion Blend",
-      blend: ["Columbia"],
-      notes: ["Balanced", "Citrus", "Vanilla"],
-      roast: "Medium",
-    },
-    {
       src: "https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee_bag_2.png",
       alt: "Acceptance Blend",
       blend: ["Guatemala", "Kenya"],
       notes: ["Bright & Crisp", "Plum", "Vanilla"],
       roast: "Light",
+    },
+    {
+      src: "https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee_bag_1.png",
+      alt: "Compassion Blend",
+      blend: ["Columbia"],
+      notes: ["Balanced", "Citrus", "Vanilla"],
+      roast: "Medium",
     },
     {
       src: "https://humble-cup-images.s3.us-east-1.amazonaws.com/coffee_bag_3.png",
