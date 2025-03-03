@@ -84,12 +84,12 @@ export function Contact() {
                     className="flex items-center gap-4"
                   >
                     <Image
-                      src="/instagram.svg"
-                      alt="Instagram"
+                      src="/facebook.svg"
+                      alt="Facebook"
                       width={24}
                       height={24}
                     />
-                    <span className="text-gray-600">Instagram</span>
+                    <span className="text-gray-600">Facebook</span>
                   </a>
                   <a
                     href="https://www.instagram.com/humblecupcoffeeco/"
@@ -97,12 +97,12 @@ export function Contact() {
                     className="flex items-center gap-4"
                   >
                     <Image
-                      src="/facebook.svg"
-                      alt="Facebook"
+                      src="/instagram.svg"
+                      alt="Instagram"
                       width={24}
                       height={24}
                     />
-                    <span className="text-gray-600">Facebook</span>
+                    <span className="text-gray-600">Instagram</span>
                   </a>
                 </div>
               </div>

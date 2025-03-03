@@ -88,7 +88,7 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-gray-300">
+                <a href="https://www.facebook.com/HumbleCupCoffeeCo/" className="hover:text-gray-300">
                   <Image
                     src="/facebook-white.svg"
                     alt="Facebook"
@@ -96,7 +96,7 @@ export default function Footer() {
                     height={24}
                   />
                 </a>
-                <a href="#" className="hover:text-gray-300">
+                <a href="https://www.instagram.com/humblecupcoffeeco/" className="hover:text-gray-300">
                   <Image
                     src="/instagram-white.svg"
                     alt="Instagram"
