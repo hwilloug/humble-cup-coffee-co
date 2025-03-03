@@ -1,4 +1,4 @@
-export const IMAGE_URL = "https://humble-cup-images.s3.us-east-1.amazonaws.com";
+export const IMAGE_URL = "https://humblecupimages.poppyland.dev";
 
 export const SEASONAL_MENU = [
   {

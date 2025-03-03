@@ -18,8 +18,8 @@ export default function Staff() {
   ];
 
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-8 text-primary text-center">
+    <div className="container mx-auto p-4 my-8">
+      <h2 className="text-3xl font-bold mb-8 text-primary text-center">
         Meet Our Staff
       </h2>
       <Divider />
@@ -28,7 +28,7 @@ export default function Staff() {
           <>
             <div className="relative p-14" key={`image-${index}`}>
               <Image
-                src="https://humble-cup-images.s3.us-east-1.amazonaws.com/gold-frame.png"
+                src="/gold-frame.png"
                 alt="Frame"
                 width={300}
                 height={300}

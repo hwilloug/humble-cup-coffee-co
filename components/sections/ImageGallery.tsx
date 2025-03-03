@@ -8,6 +8,7 @@ import { Gallery } from "react-grid-gallery";
 import { Button } from "../ui/button";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { IMAGE_URL } from "@/lib/consts";
 
 export default function ImageGallery({
   preview = false,
@@ -21,132 +22,132 @@ export default function ImageGallery({
 
   const allImages = [
     {
-      src: "/DSC_1140-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1140-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1318-2.jpg",
+      src: `${IMAGE_URL}/DSC_1318-2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1162-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1162-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_2243.jpg",
+      src: `${IMAGE_URL}/DSC_2243.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_5455-Enhanced-NR-2.jpg",
+      src: `${IMAGE_URL}/DSC_5455-Enhanced-NR-2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_4442.jpg",
+      src: `${IMAGE_URL}/DSC_4442.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_5711-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_5711-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_8799-2.jpg",
+      src: `${IMAGE_URL}/DSC_8799-2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_9757-2.jpg",
+      src: `${IMAGE_URL}/DSC_9757-2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_8045.jpg",
+      src: `${IMAGE_URL}/DSC_8045.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_9898.jpg",
+      src: `${IMAGE_URL}/DSC_9898.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_4527.jpg",
+      src: `${IMAGE_URL}/DSC_4527.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_2957-3-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_2957-3-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1350-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1350-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1254-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1254-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_2979-3-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_2979-3-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_1232-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1232-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_9736-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_9736-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_2203.jpg",
+      src: `${IMAGE_URL}/DSC_2203.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1155-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1155-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_1140-Enhanced-NR 2.jpg",
+      src: `${IMAGE_URL}/DSC_1140-Enhanced-NR 2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1476.jpg",
+      src: `${IMAGE_URL}/DSC_1476.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_4620-2.jpg",
+      src: `${IMAGE_URL}/DSC_4620-2.jpg`,
       height: 1200,
       width: 800,
     },
     {
-      src: "/DSC_8341.jpg",
+      src: `${IMAGE_URL}/DSC_8341.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1330-2.jpg",
+      src: `${IMAGE_URL}/DSC_1330-2.jpg`,
       height: 800,
       width: 1200,
     },
     {
-      src: "/DSC_1697-Enhanced-NR.jpg",
+      src: `${IMAGE_URL}/DSC_1697-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
     },
