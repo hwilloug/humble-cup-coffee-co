@@ -20,7 +20,7 @@ export function OurStory() {
               style={{
                 transform: isMobile
                   ? "none"
-                  : `translateY(${Math.max(0, (scrollY - 5500) * 0.1)}px)`,
+                  : `translateY(${Math.max(0, (scrollY - 6000) * 0.1)}px)`,
               }}
             >
               <Image

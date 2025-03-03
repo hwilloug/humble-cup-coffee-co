@@ -48,7 +48,7 @@ export function HowWeStarted() {
                 style={{
                   transform: isMobile
                     ? "none"
-                    : `translateY(${(scrollY - 6500) * (0.05 * (index - 1))}px)`,
+                    : `translateY(${(scrollY - 7500) * (0.05 * (index - 1))}px)`,
                 }}
               >
                 <div className="text-2xl sm:text-3xl font-light text-primary mb-3 sm:mb-4">

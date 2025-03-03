@@ -6,12 +6,18 @@ import { Button } from "../ui/button";
 import Divider from "../ui/divider";
 import { SEASONAL_MENU } from "@/lib/consts";
 
-export function MenuPreview({ link = true }: { link?: boolean }) {
+export function MenuPreview({
+  title,
+  link = true,
+}: {
+  title?: string;
+  link?: boolean;
+}) {
   return (
     <section className={`my-8 py-8`}>
       <div className="container mx-auto px-4 max-w-screen-xl">
         <h2 className="text-3xl sm:text-4xl text-primary font-light text-center mb-4 tracking-wide">
-          Seasonal Menu
+          {title || "Menu"}
         </h2>
         <Divider />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4">

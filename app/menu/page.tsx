@@ -16,7 +16,7 @@ export default function Menu() {
   return (
     <section>
       <div className="container mx-auto">
-        <MenuPreview link={false} />
+        <MenuPreview title="Seasonal Menu" link={false} />
 
         <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
           <Image
@@ -225,7 +225,7 @@ export default function Menu() {
         </div>
         <div className="relative p-8 px-4 max-w-xl sm:max-w-2xl lg:max-w-5xl mx-auto">
           <Image
-            src="/scalloped_edge_blue.png"
+            src="/scallopped-edge-blue.png"
             width={500}
             height={500}
             className="w-full"
@@ -273,7 +273,7 @@ export default function Menu() {
             </div>
           </div>
           <Image
-            src="/scalloped_edge_blue.png"
+            src="/scallopped-edge-blue.png"
             alt="Pothos Hanging"
             width={500}
             height={500}

@@ -14,7 +14,14 @@ export function OurBrand() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center">
-            <div className="space-y-4 sm:space-y-6 order-2 md:order-1">
+            <div
+              className="space-y-4 sm:space-y-6 order-2 md:order-1"
+              style={{
+                transform: isMobile
+                  ? "none"
+                  : `translateY(${Math.max(0, (scrollY - 7500) * 0.1)}px)`,
+              }}
+            >
               <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide text-center">
                 Our Brand
               </h2>
@@ -32,14 +39,7 @@ export function OurBrand() {
                 connections.
               </p>
             </div>
-            <div
-              className="relative order-1 md:order-2"
-              style={{
-                transform: isMobile
-                  ? "none"
-                  : `translateY(${Math.max(0, (scrollY - 6500) * 0.1)}px)`,
-              }}
-            >
+            <div className="relative order-1 md:order-2">
               <Image
                 src="/DSC_7516-Enhanced-NR.jpg"
                 alt="Coffee beans and brand elements"
