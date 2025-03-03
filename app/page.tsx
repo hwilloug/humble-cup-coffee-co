@@ -21,12 +21,13 @@ export default function Home() {
       <Hero />
       <Features />
       <Divider />
+      <MenuPreview />
+      <Divider />
       <Coffee />
+      <Divider />
       <Pastries />
       <Divider />
       <ShopFeatures />
-      <Divider />
-      <MenuPreview />
       <Divider />
       <OurStory />
       <OurBrand />
@@ -34,8 +35,6 @@ export default function Home() {
       <HowWeStarted />
       <Divider />
       <Testimonials />
-      <Divider />
-      <InTheNews />
       <Divider />
       <ImageGallery preview />
     </main>

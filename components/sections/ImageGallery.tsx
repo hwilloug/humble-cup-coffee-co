@@ -181,7 +181,7 @@ export default function ImageGallery({
   }, []);
 
   return (
-    <section className="my-12 mx-4 w-full">
+    <section className="w-full bg-primary/10 py-16 mt-16">
       <h2 className="text-3xl sm:text-4xl text-primary font-light tracking-wide mb-4 sm:mb-6 mx-auto text-center">
         Gallery
       </h2>

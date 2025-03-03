@@ -3,7 +3,14 @@
 import { MenuPreview } from "@/components/sections/MenuPreview";
 import Divider from "@/components/ui/divider";
 import Image from "next/image";
-import { MENU_ITEMS, HOUSE_MADE_FLAVORS, FLAVORS, MILK_OPTIONS, FOOD_MENU, IMAGE_URL } from "@/lib/consts";
+import {
+  MENU_ITEMS,
+  HOUSE_MADE_FLAVORS,
+  FLAVORS,
+  MILK_OPTIONS,
+  FOOD_MENU,
+  IMAGE_URL,
+} from "@/lib/consts";
 
 export default function Menu() {
   return (

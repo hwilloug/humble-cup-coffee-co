@@ -9,7 +9,7 @@ export function ShopFeatures() {
   const scrollY = useParallax();
 
   return (
-    <section className="py-8 sm:py-16">
+    <section className="py-8 sm:py-16 my-16 bg-primary/10">
       <div className="container mx-auto px-4 max-w-screen-2xl">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">

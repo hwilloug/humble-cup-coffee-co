@@ -53,7 +53,7 @@ export default function Coffee() {
     },
   ];
   return (
-    <section>
+    <section className="bg-primary/10 py-1 my-16">
       <div className="container mx-auto px-4 my-16 max-w-4xl">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl text-primary tracking-wide mb-4 sm:mb-6 mx-auto text-center">

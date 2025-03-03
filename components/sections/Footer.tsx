@@ -13,7 +13,7 @@ export default function Footer() {
             height={100}
           />
           <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-light tracking-wide">
+            <h2 className="text-2xl sm:text-3xl font-light tracking-wide">
               Humble Cup Coffee Co.
             </h2>
             <p className="mt-2 text-gray-300">
@@ -65,7 +65,9 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>414 Tom Hall St</li>
               <li>Fort Mill, SC 29715</li>
-              <li>Tel: <a href="tel:(704) 564-2933">(704) 564-2933</a></li>
+              <li>
+                Tel: <a href="tel:(704) 564-2933">(704) 564-2933</a>
+              </li>
               <li>
                 <a href="mailto:nick@humblecupcoffeeco.com">
                   nick@humblecupcoffeeco.com

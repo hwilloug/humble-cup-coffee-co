@@ -4,22 +4,19 @@ export const SEASONAL_MENU = [
   {
     name: "Classic Cappuccino",
     price: "$4.50",
-    image:
-      "https://images.unsplash.com/photo-1534778101976-62847782c213",
+    image: "https://images.unsplash.com/photo-1534778101976-62847782c213",
   },
   {
     name: "Iced Caramel Latte",
     price: "$5.00",
-    image:
-      "https://images.unsplash.com/photo-1517701604599-bb29b565090c",
+    image: "https://images.unsplash.com/photo-1517701604599-bb29b565090c",
   },
   {
     name: "Mocha Supreme",
     price: "$5.50",
-    image:
-      "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d",
+    image: "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d",
   },
-]
+];
 
 export const MENU_ITEMS: {
   section: string;
@@ -187,8 +184,7 @@ export const MENU_ITEMS: {
   },
   {
     section: "Specialty Drinks",
-    subtitle:
-      "All specialty drinks are made with locally sourced ingredients",
+    subtitle: "All specialty drinks are made with locally sourced ingredients",
     items: [
       {
         name: "Humble Bear Latte",
@@ -215,7 +211,7 @@ export const MENU_ITEMS: {
         description: "Espresso and steamed milk with honey, etc",
       },
     ],
-  }
+  },
 ];
 
 export const HOUSE_MADE_FLAVORS = ["Brown Sugar Rosemary", "Vanilla Sage"];
@@ -245,8 +241,7 @@ export const FOOD_MENU = [
       },
       {
         name: "Gluten Free Options",
-        description:
-          "Choose from our daily selection of gluten free pastries",
+        description: "Choose from our daily selection of gluten free pastries",
         price: "$5.00 - $6.00",
       },
     ],
@@ -278,5 +273,7 @@ export const FOOD_MENU = [
   },
 ];
 
-export const SCALLOPED_EDGE_URL = "https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png";
-export const SCALLOPED_EDGE_BLUE_URL = "https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped-edge-blue.png";
+export const SCALLOPED_EDGE_URL =
+  "https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped_edge.png";
+export const SCALLOPED_EDGE_BLUE_URL =
+  "https://humble-cup-images.s3.us-east-1.amazonaws.com/scalloped-edge-blue.png";
