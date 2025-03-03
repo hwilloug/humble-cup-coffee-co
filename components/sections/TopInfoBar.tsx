@@ -11,7 +11,7 @@ export function TopInfoBar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItemClass = "bg-stone-50 text-primary p-8 hover:bg-stone-200";
+  const menuItemClass = "bg-stone-50 text-primary px-8 py-4 hover:bg-stone-200";
 
   return (
     <div>
@@ -19,7 +19,7 @@ export function TopInfoBar() {
         <div className="hidden sm:flex justify-between items-center">
           {pathname !== "/" ? (
             <Link href="/">
-              <div className="flex items-center justify-center gap-1 sm:gap-4 ml-4">
+              <div className="flex items-center justify-center gap-1 sm:gap-4 mx-4">
                 <Image
                   src="/humble-logo-dark.png"
                   alt="Humble Cup Logo"
@@ -31,7 +31,7 @@ export function TopInfoBar() {
           ) : (
             <div />
           )}
-          <div className="flex items-center justify-end gap-4 sm:gap-8 font-atkinson">
+          <div className="flex items-center justify-end text-center gap-4 sm:gap-6 md:gap-8 font-atkinson text-sm md:text-md">
             <Link
               href="/menu"
               className={pathname === "/menu" ? "text-white/50" : "text-white"}
@@ -53,37 +53,23 @@ export function TopInfoBar() {
               MEET OUR STAFF
             </Link>
             <Link
+              href="/wholesale"
+              className={
+                pathname === "/wholesale" ? "text-white/50" : "text-white"
+              }
+            >
+              WHOLESALE
+            </Link>
+            <Link
               href="/events"
               className={
                 pathname === "/events" ? "text-white/50" : "text-white"
               }
             >
-              EVENTS
+              EVENTS & BOOKING
             </Link>
           </div>
         </div>
-        {pathname === "/" && (
-          <>
-            <div className="absolute top-0 left-0 w-1/4 lg:w-1/5 lg:left-12">
-              <Image
-                src="/plant-2.png"
-                alt="Humble Cup Logo Background"
-                width={200}
-                height={200}
-                className="w-full"
-              />
-            </div>
-            <div className="absolute top-10 right-4 sm:right-12 w-1/5 lg:w-1/6 lg:right-24">
-              <Image
-                src="/plant-3.png"
-                alt="Humble Cup Logo Background"
-                width={200}
-                height={200}
-                className="w-full"
-              />
-            </div>
-          </>
-        )}
         <div className="sm:hidden flex justify-center w-full">
           <Menu
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -95,19 +81,22 @@ export function TopInfoBar() {
         <div className="absolute top-10 left-0 w-full h-full bg-black/50 z-50">
           <div className="flex flex-col items-stretch text-center h-full">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-              <div className={menuItemClass}>HOME</div>
+              <div className={menuItemClass}>Home</div>
             </Link>
             <Link href="/menu" onClick={() => setIsMenuOpen(false)}>
-              <div className={menuItemClass}>MENU</div>
+              <div className={menuItemClass}>Menu</div>
             </Link>
             <Link href="/our-story" onClick={() => setIsMenuOpen(false)}>
-              <div className={menuItemClass}>OUR STORY</div>
+              <div className={menuItemClass}>Our Story</div>
             </Link>
             <Link href="/staff" onClick={() => setIsMenuOpen(false)}>
-              <div className={menuItemClass}>MEET OUR STAFF</div>
+              <div className={menuItemClass}>Meet Our Staff</div>
+            </Link>
+            <Link href="/wholesale" onClick={() => setIsMenuOpen(false)}>
+              <div className={menuItemClass}>Wholesale</div>
             </Link>
             <Link href="/events" onClick={() => setIsMenuOpen(false)}>
-              <div className={menuItemClass}>EVENTS</div>
+              <div className={menuItemClass}>Events & Booking</div>
             </Link>
           </div>
         </div>

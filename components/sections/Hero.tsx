@@ -7,7 +7,25 @@ export function Hero() {
   const scrollY = useParallax();
 
   return (
-    <section>
+    <section className="relative">
+      <div className="absolute top-0 left-0 w-1/4 lg:w-1/5 lg:left-12">
+        <Image
+          src="/plant-2.png"
+          alt="Humble Cup Logo Background"
+          width={200}
+          height={200}
+          className="w-full"
+        />
+      </div>
+      <div className="absolute top-0 right-4 sm:right-12 w-1/5 lg:w-1/6 lg:right-24">
+        <Image
+          src="/plant-3.png"
+          alt="Humble Cup Logo Background"
+          width={200}
+          height={200}
+          className="w-full"
+        />
+      </div>
       <div className="inset-0 flex flex-col items-center justify-center bg-[#e0e2e1]">
         <Image
           src="/humble-logo.png"
