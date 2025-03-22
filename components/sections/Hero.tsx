@@ -40,10 +40,10 @@ export function Hero() {
       </div>
       <div>
         <Image
-          src="/DSC_3287 2.jpg"
+          src="/DSC_3287_2.jpg"
           alt="Image 1"
-          width={100}
-          height={100}
+          width={1000}
+          height={1000}
           className="w-full"
         />
       </div>

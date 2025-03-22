@@ -10,7 +10,8 @@ export default function Wholesale() {
         <Divider />
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <p>
-            We offer wholesale pricing for cafés, boutiques, and businesses. Please contact us for more information on wholesale pricing.
+            We offer wholesale pricing for cafés, boutiques, and businesses.
+            Please contact us for more information on wholesale pricing.
           </p>
           <p>
             <a className="underline" href="mailto:nick@humblecupcoffeeco.com">
@@ -18,13 +19,23 @@ export default function Wholesale() {
             </a>
           </p>
           <p>
-            <a className="underline" href="tel:+61422777333">(704) 564-2933</a>
+            <a className="underline" href="tel:+61422777333">
+              (704) 564-2933
+            </a>
           </p>
           <p>
-            <a className="underline" href="https://www.instagram.com/humblecupcoffeeco/">Instagram</a>
+            <a
+              className="underline"
+              href="https://www.instagram.com/humblecupcoffeeco/"
+            >
+              Instagram
+            </a>
           </p>
           <p>
-            <a className="underline" href="https://www.facebook.com/HumbleCupCoffeeCo/">
+            <a
+              className="underline"
+              href="https://www.facebook.com/HumbleCupCoffeeCo/"
+            >
               Facebook
             </a>
           </p>

@@ -43,8 +43,8 @@ export function OurBrand() {
               <Image
                 src="/DSC_7516-Enhanced-NR.jpg"
                 alt="Coffee beans and brand elements"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className="w-full h-[800px] sm:h-[600px] object-cover rounded-lg"
               />
             </div>

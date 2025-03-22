@@ -82,9 +82,9 @@
 }
 
 .bg-brick {
-  background: url("https://humblecupimages.poppyland.dev/brick.jpg") center
+  background: url("https://images.humblecupcoffee.com/brick.jpg?w=1000") center
     center;
-  background-size: contain;
+  background-size: cover;
 }
 
 h1 {

@@ -54,8 +54,8 @@ export function ShopFeatures() {
                   <Image
                     src={feature.image}
                     alt={feature.title}
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                     className="w-full h-full object-cover transition-transform duration-700 rounded-t-lg"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />

@@ -26,8 +26,8 @@ export function Features() {
       <Image
         src="/DSC_1318-2.jpg"
         alt="Image 1"
-        width={100}
-        height={100}
+        width={1000}
+        height={1000}
         className="w-full lg:w-3/4 mx-auto"
       />
     </section>

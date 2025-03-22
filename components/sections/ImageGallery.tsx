@@ -20,26 +20,31 @@ export default function ImageGallery({
   const [open, setOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
+  const quality = 75;
   const allImages = [
     {
       src: `${IMAGE_URL}/DSC_1140-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1318-2.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1162-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_2243.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_5455-Enhanced-NR-2.jpg`,
@@ -50,106 +55,127 @@ export default function ImageGallery({
       src: `${IMAGE_URL}/DSC_4442.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_5711-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_8799-2.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_9757-2.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_8045.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_9898.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_4527.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_2957-3-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1350-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1254-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_2979-3-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1232-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_9736-Enhanced-NR.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_2203.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1155-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1140-Enhanced-NR 2.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1476.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_4620-2.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_8341.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1330-2.jpg`,
       height: 800,
       width: 1200,
+      quality,
     },
     {
       src: `${IMAGE_URL}/DSC_1697-Enhanced-NR.jpg`,
       height: 1200,
       width: 800,
+      quality,
     },
   ];
 

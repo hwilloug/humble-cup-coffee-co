@@ -9,7 +9,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "humble-cup-images.s3.us-east-1.amazonaws.com",
+        hostname: "images.humblecupcoffee.com",
       },
     ],
   },
