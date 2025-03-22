@@ -182,36 +182,6 @@ export const MENU_ITEMS: {
       },
     ],
   },
-  {
-    section: "Specialty Drinks",
-    subtitle: "All specialty drinks are made with locally sourced ingredients",
-    items: [
-      {
-        name: "Humble Bear Latte",
-        smPrice: 5,
-        smOz: 12,
-        lgPrice: 6,
-        lgOz: 16,
-        smIcedPrice: 5.5,
-        smIcedOz: 16,
-        lgIcedPrice: 6.5,
-        lgIcedOz: 24,
-        description: "Espresso and steamed milk with honey, etc",
-      },
-      {
-        name: "Cinnamon Bun Latte",
-        smPrice: 5,
-        smOz: 12,
-        lgPrice: 6,
-        lgOz: 16,
-        smIcedPrice: 5.5,
-        smIcedOz: 16,
-        lgIcedPrice: 6.5,
-        lgIcedOz: 24,
-        description: "Espresso and steamed milk with honey, etc",
-      },
-    ],
-  },
 ];
 
 export const HOUSE_MADE_FLAVORS = ["Brown Sugar Rosemary", "Vanilla Sage"];
